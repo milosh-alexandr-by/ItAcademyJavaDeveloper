@@ -11,7 +11,7 @@
  - Lesson03\Task06
 4. String str = "fff.aaa";			
    String[] num = str.split(".");
-Метод split не може траспознать символ "." и выдаёт ошибку.
+Метод split не может распознать символ "." и выдаёт ошибку.
  - Lesson02\Task08
-5. Какр аботает System.exit(status);. B что надо писать в скобках вместо status.
+5. Как работает System.exit(status);. И что надо писать в скобках вместо status.
  - Lesson02\Task14
