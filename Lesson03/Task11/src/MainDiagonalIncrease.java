@@ -7,7 +7,7 @@ public class MainDiagonalIncrease {
 		
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Введите n: ");
+		System.out.print("Р’РІРµРґРёС‚Рµ n: ");
 		Integer n = sc.nextInt();
 		
 		int myMatrix[][] = new int[n][n];
@@ -25,7 +25,7 @@ public class MainDiagonalIncrease {
 		}
 		System.out.println();
 		
-		System.out.print("Элементы главной диагонали: ");
+		System.out.print("Р­Р»РµРјРµРЅС‚С‹ РіР»Р°РІРЅРѕР№ РґРёР°РіРѕРЅР°Р»Рё: ");
 		for (int r=0; r<n; r++) {
 			if (r==n-1) {
 				System.out.println(myMatrix[r][r] + "."); break;
@@ -46,7 +46,7 @@ public class MainDiagonalIncrease {
 			ar[i] = myMatrix[i][i];
 		}
 		
-		System.out.print("Массив:     ");
+		System.out.print("РњР°СЃСЃРёРІ:     ");
 		for (int i=0; i<n; i++) {
 			if (i==n-1) {
 				System.out.println(ar[i] + "."); break;
@@ -54,14 +54,14 @@ public class MainDiagonalIncrease {
 			System.out.print(ar[i] + ", ");
 		}
 		
-		//  упорядочивание массива
+		//  СѓРїРѕСЂСЏРґРѕС‡РёРІР°РЅРёРµ РјР°СЃСЃРёРІР°
 		for (int w=0; w<n; w++) {
 			int f=n;
 			int min = ar[n-1];
 			for (int z=n-1; z>=w; z--) {
 				if (ar[z]<= min) {
 					min = ar[z];
-					f = z;                                // f - это позиция минимального элемента
+					f = z;                                // f - СЌС‚Рѕ РїРѕР·РёС†РёСЏ РјРёРЅРёРјР°Р»СЊРЅРѕРіРѕ СЌР»РµРјРµРЅС‚Р°
 				}
 			}
 			int k = f;
@@ -71,7 +71,7 @@ public class MainDiagonalIncrease {
 				ar[m-1] = a;
 			}
 		}
-				System.out.print("Массив r[]:                    ");
+				System.out.print("РњР°СЃСЃРёРІ r[]:                    ");
 		for (int i=0; i<n; i++) {
 			if (i==n-1) {
 				System.out.println(ar[i] + "."); break;
@@ -79,7 +79,7 @@ public class MainDiagonalIncrease {
 			System.out.print(ar[i] + ", ");
 		}
 		
-		System.out.print("Новый массив M[] для удобства: ");
+		System.out.print("РќРѕРІС‹Р№ РјР°СЃСЃРёРІ M[] РґР»СЏ СѓРґРѕР±СЃС‚РІР°: ");
 		for (int i=0; i<n; i++) {
 			if (i==n-1) {
 				System.out.println(M[i] + "."); break;
@@ -111,7 +111,7 @@ public class MainDiagonalIncrease {
 			}
 		}
 		System.out.println();
-		System.out.print("Mассив X[]: ");
+		System.out.print("MР°СЃСЃРёРІ X[]: ");
 		for (int i=0; i<n; i++) {
 			if (i==n-1) {
 				System.out.println(X[i] + "."); break;
@@ -134,12 +134,12 @@ public class MainDiagonalIncrease {
 			}
 		}
 		
-		// поменять два первых значения массива
+		// РїРѕРјРµРЅСЏС‚СЊ РґРІР° РїРµСЂРІС‹С… Р·РЅР°С‡РµРЅРёСЏ РјР°СЃСЃРёРІР°
 //		int a = ar[1];
 //		ar[1] = ar[0];
 //		ar[0] = a;
 		
-		// пропихнуть k-й элемент в начало массива, а все остальный сдвинуть
+		// РїСЂРѕРїРёС…РЅСѓС‚СЊ k-Р№ СЌР»РµРјРµРЅС‚ РІ РЅР°С‡Р°Р»Рѕ РјР°СЃСЃРёРІР°, Р° РІСЃРµ РѕСЃС‚Р°Р»СЊРЅС‹Р№ СЃРґРІРёРЅСѓС‚СЊ
 //		int k = 5;
 //		for (int m=k; m>=1; m--){
 //			int a = ar[m];
@@ -147,7 +147,7 @@ public class MainDiagonalIncrease {
 //			ar[m-1] = a;
 //		}
 		
-		// найти минимальный элемент массива и его номер
+		// РЅР°Р№С‚Рё РјРёРЅРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР° Рё РµРіРѕ РЅРѕРјРµСЂ
 //		int f=10;
 //		int min = ar[9];
 //		for (int z=9; z>=0; z--) {
@@ -156,9 +156,9 @@ public class MainDiagonalIncrease {
 //				f = z;
 //			}
 //		}
-//		System.out.println("число: " + min + ", номер символа: " + f);
+//		System.out.println("С‡РёСЃР»Рѕ: " + min + ", РЅРѕРјРµСЂ СЃРёРјРІРѕР»Р°: " + f);
 		
-		// упорядочить элементы по возрастанию
+		// СѓРїРѕСЂСЏРґРѕС‡РёС‚СЊ СЌР»РµРјРµРЅС‚С‹ РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ
 
 		
 		
@@ -176,17 +176,17 @@ public class MainDiagonalIncrease {
 		
 		
 		
-		// подсчитаем количество нулей
+		// РїРѕРґСЃС‡РёС‚Р°РµРј РєРѕР»РёС‡РµСЃС‚РІРѕ РЅСѓР»РµР№
 //		int sum = 0;
 //		for (int i=0; i<10; i++) {
 //			if (ar[i]==0) {
 //				sum = sum + 1;
 //			}
 //		}
-//		System.out.println("Количество нулей: " + sum);
+//		System.out.println("РљРѕР»РёС‡РµСЃС‚РІРѕ РЅСѓР»РµР№: " + sum);
 		
 //		int nov[] = new int[10];
-//		System.out.print("Nov Массив: ");
+//		System.out.print("Nov РњР°СЃСЃРёРІ: ");
 //		
 //		int num = 0;
 //		int k = 0;
@@ -206,7 +206,7 @@ public class MainDiagonalIncrease {
 
 //		System.out.println("num = " + num);
 
-		// у нас sum нулей, значит надо сделать ch==sum сдвигов
+		// Сѓ РЅР°СЃ sum РЅСѓР»РµР№, Р·РЅР°С‡РёС‚ РЅР°РґРѕ СЃРґРµР»Р°С‚СЊ ch==sum СЃРґРІРёРіРѕРІ
 //		for (int ch=0; ch<=sum; ch++) {                
 //			for (int i=0; i<6; i++) {
 //				if (ar[i]==0) {

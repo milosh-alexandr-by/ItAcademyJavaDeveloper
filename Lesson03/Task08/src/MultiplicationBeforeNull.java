@@ -8,7 +8,7 @@ public class MultiplicationBeforeNull {
 			ar[i] = (int)((Math.random()*5));
 		}
 		
-		System.out.print("Массив случайных чисел от 0 до 5: ");
+		System.out.print("РњР°СЃСЃРёРІ СЃР»СѓС‡Р°Р№РЅС‹С… С‡РёСЃРµР» РѕС‚ 0 РґРѕ 5: ");
 		for (int i=0; i<10; i++) {
 			if (i==9) {
 				System.out.println(ar[i] + "."); break;
@@ -24,9 +24,9 @@ public class MultiplicationBeforeNull {
 			else break;
 		}
 		if (ar[0]==0) {
-			System.out.println("Нулю равен первый элемент. Невозможно удовлетворить условию задачи.");
+			System.out.println("РќСѓР»СЋ СЂР°РІРµРЅ РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚. РќРµРІРѕР·РјРѕР¶РЅРѕ СѓРґРѕРІР»РµС‚РІРѕСЂРёС‚СЊ СѓСЃР»РѕРІРёСЋ Р·Р°РґР°С‡Рё.");
 		}
-		else {System.out.println("Произведение элементов до первого нуля равна: " + mult + ".");
+		else {System.out.println("РџСЂРѕРёР·РІРµРґРµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ РґРѕ РїРµСЂРІРѕРіРѕ РЅСѓР»СЏ СЂР°РІРЅР°: " + mult + ".");
 		}
 		
 

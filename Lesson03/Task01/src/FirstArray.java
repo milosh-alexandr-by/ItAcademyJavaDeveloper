@@ -7,7 +7,7 @@ public class FirstArray {
 		
 		Scanner sc = new Scanner(System.in);
 		sc.useLocale(Locale.US);
-		System.out.println("Введите переменные через enter: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РїРµСЂРµРјРµРЅРЅС‹Рµ С‡РµСЂРµР· enter: ");
 		Float ft[] = new Float[10];
 		for (int i=0; i<ft.length; i++) {
 			ft[i] = sc.nextFloat();

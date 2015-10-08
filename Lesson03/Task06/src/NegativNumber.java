@@ -3,13 +3,13 @@ public class NegativNumber {
 
 	public static void main(String[] args) {
 		
-		System.out.print("Массив случайных чисел от -100 до 100: ");
+		System.out.print("РњР°СЃСЃРёРІ СЃР»СѓС‡Р°Р№РЅС‹С… С‡РёСЃРµР» РѕС‚ -100 РґРѕ 100: ");
 		int ar[] = new int[10];
 		for (int i=0; i<10; i++) {
 			ar[i] = (int)((Math.random()*200)-100);
 		}
 		
-		System.out.print("Массив: ");
+		System.out.print("РњР°СЃСЃРёРІ: ");
 		for (int i=0; i<10; i++) {
 			if (i==9) {
 				System.out.println(ar[i] + "."); break;
@@ -24,10 +24,10 @@ public class NegativNumber {
 			}
 		}
 		if (sum == 0) {
-			System.out.println("В массиве нет отрицательных элементов.");
+			System.out.println("Р’ РјР°СЃСЃРёРІРµ РЅРµС‚ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ.");
 		}
 		else {
-			System.out.println("В массиве " + sum + " отрицательных элементов.");
+			System.out.println("Р’ РјР°СЃСЃРёРІРµ " + sum + " РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ.");
 		}	
 	}
 

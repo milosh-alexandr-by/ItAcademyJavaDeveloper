@@ -8,7 +8,7 @@ public class MaxAndMin {
 		
 		Scanner sc = new Scanner(System.in);
 		sc.useLocale(Locale.US);
-		System.out.println("Введите переменные через enter: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РїРµСЂРµРјРµРЅРЅС‹Рµ С‡РµСЂРµР· enter: ");
 		int myArray[] = new int[10];
 		for (int i=0; i<myArray.length; i++) {
 			myArray[i] = sc.nextInt();

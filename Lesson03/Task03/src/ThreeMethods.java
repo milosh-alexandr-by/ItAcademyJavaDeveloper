@@ -6,7 +6,7 @@ public class ThreeMethods {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Введите переменные через enter: "); 
+		System.out.println("Р’РІРµРґРёС‚Рµ РїРµСЂРµРјРµРЅРЅС‹Рµ С‡РµСЂРµР· enter: "); 
 		int firstArray[] = new int[15];
 		for (int i=0; i<15; i++) {
 			firstArray[i]=sc.nextInt();
@@ -19,21 +19,21 @@ public class ThreeMethods {
 			thirdArray[i]= (int)(Math.random()*10);
 		}
 
-		System.out.print("Первый массив: ");
+		System.out.print("РџРµСЂРІС‹Р№ РјР°СЃСЃРёРІ: ");
 		for (int i=0; i<15; i++) {
 			if (i==14) {
 				System.out.println(firstArray[i]+ "."); break;
 			}
 			System.out.print(firstArray[i]+ ", ");;
 		}
-		System.out.print("Второй массив: ");
+		System.out.print("Р’С‚РѕСЂРѕР№ РјР°СЃСЃРёРІ: ");
 		for (int i=0; i<15; i++) {
 			if (i==14) {
 				System.out.println(firstArray[i]+ "."); break;
 			}
 			System.out.print(secondArray[i]+ ", ");;
 		}
-		System.out.print("Третий массив: ");
+		System.out.print("РўСЂРµС‚РёР№ РјР°СЃСЃРёРІ: ");
 		for (int i=0; i<15; i++) {
 			if (i==14) {
 				System.out.println(firstArray[i]+ "."); break;

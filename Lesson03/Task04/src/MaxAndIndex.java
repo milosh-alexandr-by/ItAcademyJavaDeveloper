@@ -7,7 +7,7 @@ public class MaxAndIndex {
 		for (int i=0; i<15; i++) {
 			myArray[i] = (int)(Math.random()*100);
 		}
-		System.out.print("Ìàññèâ ñëó÷àéíûõ ÷èñåë îò 0 äî 100: ");
+		System.out.print("ÐœÐ°ÑÑÐ¸Ð² ÑÐ»ÑƒÑ‡Ð°Ð¹Ð½Ñ‹Ñ… Ñ‡Ð¸ÑÐµÐ» Ð¾Ñ‚ 0 Ð´Ð¾ 100: ");
 		for (int i=0; i<15; i++) {
 			if (i==14) {
 				System.out.println(myArray[i] + "."); break;
@@ -23,7 +23,7 @@ public class MaxAndIndex {
 			}
 		}
 		
-		System.out.println("Ìàêñèìàëüíîå çíà÷åíèå â ìàññèâå: " + max + ", êîòîðîå ñîîòâåòñòâóåò èíäåêñó: " + k + ".");
+		System.out.println("ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ: " + max + ", ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ðµ ÑÐ¾Ð¾Ñ‚Ð²ÐµÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚ Ð¸Ð½Ð´ÐµÐºÑÑƒ: " + k + ".");
 
 	}
 

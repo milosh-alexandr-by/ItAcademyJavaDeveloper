@@ -8,7 +8,7 @@ public class NullsToEnd {
 			ar[i] = (int)((Math.random()*5));
 		}
 		
-		System.out.print("Массив случайных чисел от 0 до 5: ");
+		System.out.print("РњР°СЃСЃРёРІ СЃР»СѓС‡Р°Р№РЅС‹С… С‡РёСЃРµР» РѕС‚ 0 РґРѕ 5: ");
 		for (int i=0; i<10; i++) {
 			if (i==9) {
 				System.out.println(ar[i] + "."); break;
@@ -18,7 +18,7 @@ public class NullsToEnd {
 		
 		
 		int nov[] = new int[10];
-		System.out.print("Новый массив:                     ");
+		System.out.print("РќРѕРІС‹Р№ РјР°СЃСЃРёРІ:                     ");
 		
 
 		int k = 0;

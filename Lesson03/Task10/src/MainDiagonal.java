@@ -6,7 +6,7 @@ public class MainDiagonal {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Введите n: ");
+		System.out.print("Р’РІРµРґРёС‚Рµ n: ");
 		Integer n = sc.nextInt();
 		
 		int myMatrix[][] = new int[n][n];
@@ -16,7 +16,7 @@ public class MainDiagonal {
 				
 			}
 		}
-		System.out.println("Сгенерированная матрица:");
+		System.out.println("РЎРіРµРЅРµСЂРёСЂРѕРІР°РЅРЅР°СЏ РјР°С‚СЂРёС†Р°:");
 		for (int i=0; i<n; i++) {
 			if (i>0) {
 				System.out.println();
@@ -27,7 +27,7 @@ public class MainDiagonal {
 		}
 		System.out.println();
 		
-		System.out.print("Элементы главной диагонали: ");
+		System.out.print("Р­Р»РµРјРµРЅС‚С‹ РіР»Р°РІРЅРѕР№ РґРёР°РіРѕРЅР°Р»Рё: ");
 		for (int k=0; k<n; k++) {
 			if (k==(n-1)) {
 				System.out.println(myMatrix[k][k] + "."); break;
@@ -35,7 +35,7 @@ public class MainDiagonal {
 			System.out.print(myMatrix[k][k] + ", ");
 		}
 		
-		System.out.print("Элементы побочной диагонали: ");
+		System.out.print("Р­Р»РµРјРµРЅС‚С‹ РїРѕР±РѕС‡РЅРѕР№ РґРёР°РіРѕРЅР°Р»Рё: ");
 		for (int p=0; p<n; p++) {
 			if (p==(n-1)) {
 				System.out.println(myMatrix[p][n-p-1] + "."); break;
