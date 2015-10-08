@@ -1,0 +1,44 @@
+
+import java.util.Scanner;
+
+public class MainDiagonal {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("¬ведите n: ");
+		Integer n = sc.nextInt();
+		
+		int myMatrix[][] = new int[n][n];
+		for (int i=0; i<n; i++) {
+			for (int j=0; j<n; j++) {
+				myMatrix[i][j] = (int)(Math.random()*10); 
+				
+			}
+		}
+		for (int i=0; i<n; i++) {
+			System.out.println();
+			for (int j=0; j<n; j++) {
+				System.out.print(myMatrix[i][j] + "  ");				
+			}
+		}
+		System.out.println();
+		
+		System.out.print("Ёлементы главноq диагонали: ");
+		for (int k=0; k<n; k++) {
+			if (k==3) {
+				System.out.println(myMatrix[k][k] + "."); break;
+			}
+			System.out.print(myMatrix[k][k] + ", ");
+		}
+		
+		System.out.print("Ёлементы побочной диагонали: ");
+		for (int p=0; p<n; p++) {
+			if (p==3) {
+				System.out.println(myMatrix[p][n-p] + "."); break;
+			}
+			System.out.print(myMatrix[p][n-p] + ", ");
+		}
+	}
+
+}

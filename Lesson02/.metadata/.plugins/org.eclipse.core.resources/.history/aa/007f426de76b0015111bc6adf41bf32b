@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+
+public class Calculator {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Введите ваше выражение, например \"1+1\": ");
+		String str = sc.nextLine();
+		System.out.println(str);
+		sc.close();
+		char firstMinus = str.charAt(1);
+		if (firstMinus == 1) {
+			System.out.println("Первый знак единица");
+		}
+		else {
+			System.out.println("Не единица");
+		}
+		
+
+	}
+
+}

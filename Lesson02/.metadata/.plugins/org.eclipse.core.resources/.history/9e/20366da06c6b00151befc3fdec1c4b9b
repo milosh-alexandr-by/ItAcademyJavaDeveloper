@@ -1,0 +1,57 @@
+
+import java.util.Scanner;
+
+public class CompareNumber {
+
+	public static void main(String[] args) {
+		
+		/*	
+			Написать  программу,  которая  сравнивает  два  введенных  с  клавиатуры числа.
+		*/
+		int i = 1;
+		boolean boo = false;
+		
+		
+		
+		
+		do {
+			Scanner sc = new Scanner(System.in);
+			
+			System.out.print("Введите строку с номером " + i + ": ");
+			if (sc.hasNextDouble()) {boo = true;}
+			String str = sc.nextLine();
+			System.out.println("Выводим str:" + str);
+			i++;
+			System.out.println("Выводим str:" + str);
+			System.out.println("Выводим boo:" + boo);
+		} while( boo == false);
+		
+		
+		
+		
+//		do {Scanner sc = new Scanner(System.in)}
+//		while ((sc.hasNextDouble()) != true);
+//		System.out.print("Введите первое число: ");
+//		
+//		{System.out.println("Введено число");}
+//		String firstNumber = sc.nextLine();
+//		
+//		System.out.print("Введите второе число: ");
+//		if (sc.hasNextDouble()) {System.out.println("Введено число");}
+//		String secondNumber = sc.nextLine();
+		
+//		if (firstNumber == secondNumber) {
+//			System.out.print("Числа равны");
+//		} 
+//		else {
+//			if (firstNumber > secondNumber) {
+//				System.out.print("Первое число больше второго");
+//			}
+//			else {
+//				System.out.print("Второе число больше первого");
+//			}
+//		}
+		
+	}
+
+}

@@ -1,0 +1,34 @@
+
+import java.util.Scanner;
+
+public class Calculator {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Введите ваше выражение, например \"1+1\": ");
+		String str = sc.nextLine();
+		System.out.println(str);
+		sc.close();
+//		char firstMinus = str.charAt(0);
+//		if (firstMinus == '-') {
+//			System.out.println("Первый знак минус");
+//		}
+//		else {
+//			System.out.println("Не минус");
+//		}
+//		
+		int numberOfSign = 0;
+		char[] chArray = str.toCharArray();
+		for (int i=0; i<str.length(); i++) {
+			if (chArray[i] == ('-' | '-') ) {
+				numberOfSign = i;				
+			}
+		}
+		System.out.println(numberOfSign);
+
+	
+		
+	}
+
+}

@@ -1,0 +1,3 @@
+Themes of Lesson01: знакомство с Java; "Hello, World!".
+Themes of Lesson02: примитивные типы; строковый тип String; if/else; switch.
+Themes of Lesson03: строки и методы; массивы; for; while; do/while; break; continue; for each.

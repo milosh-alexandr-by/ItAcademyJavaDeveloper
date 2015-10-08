@@ -1,0 +1,184 @@
+import java.util.Scanner;
+
+public class Diagonal {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Введите n: ");
+		Integer n = sc.nextInt();
+		
+		int myMatrix[][] = new int[n][n];
+		for (int i=0; i<n; i++) {
+			for (int j=0; j<n; j++) {
+				myMatrix[i][j] = (int)(Math.random()*10); 
+				
+			}
+		}
+		for (int i=0; i<n; i++) {
+			System.out.println();
+			for (int j=0; j<n; j++) {
+				System.out.print(myMatrix[i][j] + "  ");				
+			}
+		}
+		
+		System.out.println();
+		
+		System.out.print("Элементы главной диагонали: ");
+		for (int r=0; r<n; r++) {
+			if (r==n-1) {
+				System.out.println(myMatrix[r][r] + "."); break;
+			}
+			System.out.print(myMatrix[r][r] + ", ");
+		}
+
+		int maxCharacter = (int)Math.pow(10, n);
+		System.out.println("maxCharacter = " + maxCharacter);
+		int minCharacter = (int)Math.pow(10, n-1);
+		System.out.println("minCharacter = " + minCharacter);
+		
+//		for (int i=minCharacter; i<(maxCharacter-1); i++) {
+		for (int i=12344; i<(12436); i++) {
+			// делаем из числа массив massiv[]
+			int t = i;
+			Integer massiv[] = new Integer[5];
+			for (int i1=4; i1>=0; i1--) {
+				int q = (int)t%10;
+				massiv[i1] = q;
+				t = t/10;
+			}
+			
+			// проверяем состоит ли массив из разных цифр
+			int sum = 0;
+			
+			int chislo = 0;
+			for (int i2=0; i2<4; i2++) {
+				for (int j2=(i2+1); j2<5; j2++) {
+					if (massiv[i2]==massiv[j2]) {
+						sum = sum +1;
+					} 
+				}
+			}
+			if (sum==0) {
+				
+				chislo = i;
+				
+				// проверим на условие, чтобы цифры попадали в наш диапазон
+				int t1 = chislo;
+				Integer massiv1[] = new Integer[5];
+				for (int i1=4; i1>=0; i1--) {
+					int q = (int)t1%10;
+					massiv1[i1] = q;
+					t1 = t1/10;
+				}
+				int prov = 0;
+				for (int i5=0; i5<5; i5++) {
+					if ((massiv1[i5]>=1) & (massiv1[i5]<=5)) {
+						prov = prov + 0;
+					}
+					else {
+						prov = prov + 1;
+					}
+				}		
+				if (prov==0) {
+					System.out.println("Условие выполняется + все цифры разные: " + chislo);
+					
+				// преобразуем число chislo в массив
+					int tt = i;
+					Integer chislo1[] = new Integer[5];
+					for (int i6=4; i6>=0; i6--) {
+						int q6 = (int)tt%10;
+						chislo1[i6] = (q6-1);
+						tt = tt/10;
+					}
+					for (int i9=0; i9<n; i9++) {
+					if (i9==n-1) {
+						System.out.println(chislo1[i9] + "."); break;
+					}
+					System.out.print(chislo1[i9] + ", ");
+				}
+				
+				// создадим новую матрицу согласно числу
+					Integer newMatrix[][] = new Integer[n][n];
+					for (int ds=0; ds<=4; ds++) {
+						for (int jr=0; jr<=4; jr++) {
+							newMatrix[ds][jr] = myMatrix[ds][chislo1[jr]];
+						}
+						
+					}
+						for (int i11=0; i11<n; i11++) {
+						System.out.println();
+						for (int j11=0; j11<n; j11++) {
+							System.out.print(newMatrix[i11][j11] + "  ");				
+						}
+					}
+						System.out.println();
+						
+						System.out.print("Элементы главной диагонали: ");
+						for (int r=0; r<n; r++) {
+							if (r==n-1) {
+								System.out.println(newMatrix[r][r] + "."); break;
+							}
+							System.out.print(newMatrix[r][r] + ", ");
+						}
+
+							// загоним элементы диагонали в массив
+						int masel[] = new int[n];
+						for (int or=0; or<n; or++) {							
+							masel[or] = newMatrix[or][or]; 
+								
+						}
+						System.out.print("masel[]: ");
+						for (int g=0; g<n; g++) {
+							if (g==n-1) {
+								System.out.println(masel[g] + "."); break;
+							}
+							System.out.print(masel[g] + ", ");
+						}
+						int sok = 0;
+						
+						for (int sk = 0; sk<4; sk++) {
+							if (masel[sk]>=masel[sk+1]) {
+								sok = sok+1;
+							}
+						}
+						if (sok==0) {
+							System.out.println("Цифры по возрастанию");
+						}
+						else {
+							System.out.println("Цифры в разнобой");
+						}
+						}
+	
+	
+				}
+//				else {
+//					System.out.println("Не выполняется");
+//				}
+				
+			}
+//			else {
+//				System.out.println("Есть две одинаковые цифры");
+//			}
+		}
+		
+	
+		
+		
+//		}
+		
+
+		
+
+//		for (int i=0; i<n; i++) {
+//			if (i==n-1) {
+//				System.out.println(massiv[i] + "."); break;
+//			}
+//			System.out.print(massiv[i] + ", ");
+//		}
+//		
+	
+}
+	
+	
+

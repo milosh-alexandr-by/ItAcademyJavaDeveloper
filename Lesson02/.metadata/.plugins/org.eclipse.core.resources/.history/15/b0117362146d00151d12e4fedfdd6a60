@@ -1,0 +1,35 @@
+
+import java.util.Scanner;       
+
+public class StringHalf {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);               // создаём объект класса Scanner
+		System.out.print("Enter yuor string: ");
+		String yourString = sc.nextLine();                 // ввод вашей строки с клавиатуры
+		int numberOfCharacter = yourString.length();       // вычисляем количество символов в строке
+		System.out.println("Number of characters in tour string: " + numberOfCharacter);
+		sc.close();
+		
+		// проверяем, чётное или нечётеное количество символов в строке
+		
+		if (numberOfCharacter%2 != 0) {
+			System.out.println("У вас нечётное количество символов в строке, поэтому разобъём её на две строки"
+					+ " по " + ((numberOfCharacter/2)+1) + " и " + numberOfCharacter/2 + " символов" + ".");
+			String newFirstString = yourString.substring(0, ((numberOfCharacter/2)+1));
+			String newSecondString = yourString.substring(((numberOfCharacter/2)+1));
+			System.out.println("Ваша первая новая строка: " + newFirstString + "\n" + "Ваша вторая новая строка: " + newSecondString);
+		}
+		else {
+			System.out.println("Разобъём вашу строку на две строки по " + numberOfCharacter/2 + " символов" + ".");
+			String newFirstString = yourString.substring(0, numberOfCharacter/2);
+			String newSecondString = yourString.substring(numberOfCharacter/2);
+			System.out.println("Ваша первая новая строка: " + newFirstString + "\n" + "Ваша вторая новая строка: " + newSecondString);
+		}
+		
+		// ERROR: исправить окончания слова "соимвол", в зависимости от числа
+		// Вывести сообщение об ошибке, если ввели только один символ
+	}
+
+}

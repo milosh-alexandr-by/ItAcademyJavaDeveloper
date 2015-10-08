@@ -1,0 +1,21 @@
+
+import java.util.Scanner;
+
+public class DayOfWeek {
+
+	public static void main(String[] args) {
+		
+		Integer numberOfWeek = 0; 
+		
+		Scanner sc = new Scanner(System.in);
+		if (sc.hasNextInt()) {
+			numberOfWeek = sc.nextInt();
+		}
+		else {
+			System.out.println("Ошибка");
+		}
+		
+		System.out.println(numberOfWeek);
+	}
+
+}

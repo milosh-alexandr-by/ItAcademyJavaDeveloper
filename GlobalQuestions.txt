@@ -1,0 +1,17 @@
+1. Scanner sc = new Scanner(System.in);
+   Выдаёт ошибку:  Resourse leak: 'sc' is never closed.
+ - Lesson02\Task02
+ - Lesson02\Task14
+2. Как ограничить вывод на экран только нескольких цифр после запятой.
+ - Lesson02\Task03
+ - Lesson02\Task14
+3. Изменять окончания существительных, в зависимости от их часла. Например: 1 килограмм, 2 килограмма, 6 килограммов.
+ - Lesson02\Task01
+ - Lesson02\Task05
+ - Lesson03\Task06
+4. String str = "fff.aaa";			
+   String[] num = str.split(".");
+Метод split не може траспознать символ "." и выдаёт ошибку.
+ - Lesson02\Task08
+5. Какр аботает System.exit(status);. B что надо писать в скобках вместо status.
+ - Lesson02\Task14

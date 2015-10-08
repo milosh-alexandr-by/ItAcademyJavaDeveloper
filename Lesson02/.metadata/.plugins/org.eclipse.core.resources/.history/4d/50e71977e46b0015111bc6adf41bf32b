@@ -1,0 +1,18 @@
+
+import java.util.Scanner;
+
+public class QuotientTwoNumber {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("¬ведите первое чиcло: ");
+		Double d1 = sc.nextDouble(); 
+		System.out.print("¬ведите второе чило: ");
+		Double d2 = sc.nextDouble();
+		System.out.print("„астное от делени€ двух чисел равно: " + d1/d2);
+		sc.close();
+
+	}
+
+}

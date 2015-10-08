@@ -1,0 +1,34 @@
+
+import java.util.Scanner;       // импортируем класс Scanner
+
+public class StringHalf {
+
+	public static void main(String[] args) {
+		
+	/*	Создайте переменную типа String c любым текстом (не сильно короткое). 
+		Далее выведите на экран количество символов в данной строке.
+		Далее разделите строку пополам (если ровно поделить не выходит то +­1 не cтрашно),
+		в результате у вас должно быть 2­е новых переменных типа String с 
+		частями из изначальной строки. Полученные строки выведите на экран.
+	*/
+
+		Scanner sc = new Scanner(System.in);            // создаём объект класса Scanner
+		System.out.print("Введите вашу строку: ");
+		String yourString = sc.nextLine();
+		int numberOfCharacter = yourString.length();
+		System.out.println("Количество символов в вашей строке: " + numberOfCharacter);
+		
+		if (numberOfCharacter%2 != 0) {
+			System.out.println("У вас нечётное количество символов в строке, поэтому разобъём её на две строки"
+					+ " по " + ((numberOfCharacter/2)+1) + " и " + numberOfCharacter/2 + " символов" + ".");
+			String newFirstString = yourString.substring(0, ((numberOfCharacter/2)+1));
+			String newSecondString = yourString.substring(((numberOfCharacter/2)+1));
+			System.out.println("Ваша первая новая строка: " + newFirstString + "\n" + "Ваша вторая новая строка: " + newSecondString);
+		}
+		else {
+			System.out.println("Разобъём вашу строку на две строки по " + numberOfCharacter/2 + " символов" + ".");
+			System.out.println(yourString.substring(0));
+		}
+	}
+
+}

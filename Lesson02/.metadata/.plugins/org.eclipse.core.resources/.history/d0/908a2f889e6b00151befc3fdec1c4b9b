@@ -1,0 +1,23 @@
+
+import java.util.Scanner;
+
+public class DayOfWeek {
+
+	public static void main(String[] args) {
+		
+		Integer numberOfWeek = 0; 
+		
+		Scanner sc = new Scanner(System.in);
+		if (sc.hasNextInt()) {
+			System.out.print("¬ведите число: ");
+			numberOfWeek = sc.nextInt();
+			
+		}
+		else {
+			System.out.print("ќшибка: введите число от 1 до 7: ");
+		}
+		
+		System.out.println(numberOfWeek);
+	}
+
+}

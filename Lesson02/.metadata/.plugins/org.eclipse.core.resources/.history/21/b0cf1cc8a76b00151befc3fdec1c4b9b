@@ -1,0 +1,57 @@
+
+import java.util.Scanner;
+
+public class DayCalendar {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Введите дату в формате: число.месяц.год. (Нарпример: 9.05.1945)");
+		System.out.print("Ваша дата: ");
+		String str = sc.nextLine();
+		System.out.println(str);
+		
+		String[] numbers = str.split("a");
+//		System.out.println(numbers[0]);
+//		System.out.println(numbers[1]);
+//		System.out.println(numbers[2]);
+		
+		Integer d = Integer.valueOf(numbers[1]);    // номер месяца
+//		System.out.println(d);
+		int m=0;                            // номер месяца в Древнем Риме
+		if (d==1) {
+			m = 11;
+		}
+		else {
+			if (d==2) {
+				m = 12;
+			}
+			else {
+				m = d-2;
+			}
+		}
+//		System.out.println(m);
+		
+		Integer y = Integer.valueOf(numbers[2]);     // номер года
+		int Y = y%100;
+//		System.out.println(Y);
+		
+		int c = y/100;
+//		System.out.println(c);
+		
+		
+		int summ1 =(13*m-1)/5;
+		int summ2 = Y/4;
+		int summ3 = c/4;
+		
+		Integer chislo = Integer.valueOf(numbers[0]);
+		System.out.println("Число: " + chislo);
+		System.out.println("Месяц: " + d);
+		System.out.println("Год: " + y);
+		
+		int day = (d + summ1 + Y + summ2 + summ3 - (2*c) + 777)%7;
+		System.out.println("Число day равно: " + day);
+
+	}
+
+}
