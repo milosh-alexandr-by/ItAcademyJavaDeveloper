@@ -6,31 +6,31 @@ public class CorrectRouble {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Ââåäèòå êîëè÷åñòâî ðóáëåé: ");
+		System.out.print("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ€ÑƒÐ±Ð»ÐµÐ¹: ");
 		Integer rouble = sc.nextInt();
 		sc.close();
 				
-		int g = rouble%100;           // íàì âàæíû òîëüêî äâå ïîñëåäíèå öèôðû ÷èñëà
+		int g = rouble%100;           // Ð½Ð°Ð¼ Ð²Ð°Ð¶Ð½Ñ‹ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð´Ð²Ðµ Ð¿Ð¾ÑÐ»ÐµÐ´Ð½Ð¸Ðµ Ñ†Ð¸Ñ„Ñ€Ñ‹ Ñ‡Ð¸ÑÐ»Ð°
 				
-		if ((g >= 11) & ( g<= 14))  {              // ïðîïèñûâàåì "ðóáëåé" äëÿ ÷èñåë 11, 12, 13, 14
-			System.out.println(rouble + " ðóáëåé.");
+		if ((g >= 11) & ( g<= 14))  {              // Ð¿Ñ€Ð¾Ð¿Ð¸ÑÑ‹Ð²Ð°ÐµÐ¼ "Ñ€ÑƒÐ±Ð»ÐµÐ¹" Ð´Ð»Ñ Ñ‡Ð¸ÑÐµÐ» 11, 12, 13, 14
+			System.out.println(rouble + " Ñ€ÑƒÐ±Ð»ÐµÐ¹.");
 		}
-		else {                                          // ïðîïèñûâàåì çíà÷åíèÿ äëÿ îñòàëüíûõ îêîí÷àíèé
+		else {                                          // Ð¿Ñ€Ð¾Ð¿Ð¸ÑÑ‹Ð²Ð°ÐµÐ¼ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð´Ð»Ñ Ð¾ÑÑ‚Ð°Ð»ÑŒÐ½Ñ‹Ñ… Ð¾ÐºÐ¾Ð½Ñ‡Ð°Ð½Ð¸Ð¹
 			int p = g%10;
 			switch (p){
 			case 1:
-				System.out.println(rouble + " ðóáëü."); break;
+				System.out.println(rouble + " Ñ€ÑƒÐ±Ð»ÑŒ."); break;
 			case 2: 
 			case 3:
 			case 4:
-				System.out.println(rouble + " ðóáëÿ."); break;
+				System.out.println(rouble + " Ñ€ÑƒÐ±Ð»Ñ."); break;
 			case 5: 
 			case 6: 
 			case 7: 
 			case 8:
 			case 9:
 			case 0:
-				System.out.println(rouble + " ðóáëåé."); break;
+				System.out.println(rouble + " Ñ€ÑƒÐ±Ð»ÐµÐ¹."); break;
 			}
 		}
 		

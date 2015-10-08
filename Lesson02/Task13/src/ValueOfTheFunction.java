@@ -8,7 +8,7 @@ public class ValueOfTheFunction {
 		for ( x=-4; x<=4; x=x+0.5  ) {
 			y = Math.pow(x, 2) - 5*x - 8;
 			if (x<0) {
-				System.out.println("x = " + x + "  " + "y = " + y);     // ÷òîáû âûðîâíÿòü èãðåêè
+				System.out.println("x = " + x + "  " + "y = " + y);     // Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð²Ñ‹Ñ€Ð¾Ð²Ð½ÑÑ‚ÑŒ Ð¸Ð³Ñ€ÐµÐºÐ¸
 			}
 			else {
 				System.out.println("x = " + x + "  " + " y = " + y);

@@ -6,7 +6,7 @@ public class SumOfNumbers {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Введите n: ");
+		System.out.print("Р’РІРµРґРёС‚Рµ n: ");
 		Integer n= sc.nextInt();
 		sc.close();
 		int sum = 0;
@@ -15,7 +15,7 @@ public class SumOfNumbers {
 			sum = sum + i;
 		}
 		
-		System.out.println("Сумма чисел от 1 до " + n + " равна: " + sum + ".");
+		System.out.println("РЎСѓРјРјР° С‡РёСЃРµР» РѕС‚ 1 РґРѕ  " + n + " СЂР°РІРЅР°: " + sum + ".");
 
 	}
 

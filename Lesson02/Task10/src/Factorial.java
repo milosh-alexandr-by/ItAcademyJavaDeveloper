@@ -11,17 +11,17 @@ public class Factorial {
 		sc.close();
 		int f = 1;
 		if (n<0) {
-			System.out.println("Ôàêòîðèàë îò îòðèöàòåëüíîãî ÷èñëà áðàòü íåëüçÿ.");
+			System.out.println("Ð¤Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð» Ð¾Ñ‚ Ð¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ð³Ð¾ Ñ‡Ð¸ÑÐ»Ð° Ð±Ñ€Ð°Ñ‚ÑŒ Ð½ÐµÐ»ÑŒÐ·Ñ.");
 		}
 		else {
 			if (n==0) {
-				System.out.println("Ôàêòîðèàë ðàâåí: 1.");
+				System.out.println("Ð¤Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð» Ñ€Ð°Ð²ÐµÐ½: 1.");
 			}
 			else {
 				for (int i=1; i<=n; i++) {
 					f = f*i;
 				}
-				System.out.println("Ôàêòîðèàë ðàâåí: " + f + ".");
+				System.out.println("Ð¤Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð» Ñ€Ð°Ð²ÐµÐ½: " + f + ".");
 			}
 		}
 			

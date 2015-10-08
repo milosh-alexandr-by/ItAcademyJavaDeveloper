@@ -11,7 +11,7 @@ public class QuotientTwoNumber {
 		Double d1 = sc.nextDouble(); 
 		System.out.print("Enter second number: ");
 		Double d2 = sc.nextDouble();
-		System.out.print("Частное от деления двух чисел равно: " + d1/d2);
+		System.out.print("Р§Р°СЃС‚РЅРѕРµ РѕС‚ РґРµР»РµРЅРёСЏ РґРІСѓС… С‡РёСЃРµР» СЂР°РІРЅРѕ: " + d1/d2);
 		sc.close();
 
 	}

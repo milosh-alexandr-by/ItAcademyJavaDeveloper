@@ -3,24 +3,24 @@ import java.util.Scanner;
 
 public class OptimalWeight {
 	
-	// проверить окончание килограммов
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter your height, см: ");
+		System.out.print("Enter your height, СЃРј: ");
 		Double rost = sc.nextDouble();
-		System.out.print("Enter your weight, кг: ");
+		System.out.print("Enter your weight, РєРі: ");
 		Double ves = sc.nextDouble();
 		sc.close();
 		double optimalVes = rost - 100;
 		if (optimalVes < ves) {
-			System.out.println("Вам нужно похудеть на " + (ves-optimalVes) + " килограмм");
+			System.out.println("Р’Р°Рј РЅСѓР¶РЅРѕ РїРѕС…СѓРґРµС‚СЊ РЅР° " + (ves-optimalVes) + " РєРёР»РѕРіСЂР°РјРј");
 		}
 		if (optimalVes > ves) {
-			System.out.println("Вам нужно набрать " + (optimalVes-ves) + " килограмм");
+			System.out.println("Р’Р°Рј РЅСѓР¶РЅРѕ РЅР°Р±СЂР°С‚СЊ " + (optimalVes-ves) + " РєРёР»РѕРіСЂР°РјРј");
 		}
 		if (optimalVes == ves) {
-			System.out.println("Вы в иедальной форме!");
+			System.out.println("Р’С‹ РІ РёРµРґР°Р»СЊРЅРѕР№ С„РѕСЂРјРµ!");
 		}
 	}
 	

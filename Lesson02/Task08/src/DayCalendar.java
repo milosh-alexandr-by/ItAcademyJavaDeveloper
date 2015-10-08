@@ -7,17 +7,17 @@ public class DayCalendar {
 		
 		Scanner sc = new Scanner(System.in);
 //		sc.useLocale(Locale.US);
-		System.out.println("Введите дату в формате: число.месяц.год. (Нарпример: 9-05-1945)");
+		System.out.println("Р’РІРµРґРёС‚Рµ РґР°С‚Сѓ РІ С„РѕСЂРјР°С‚Рµ: С‡РёСЃР»Рѕ.РјРµСЃСЏС†.РіРѕРґ. (РќР°СЂРїСЂРёРјРµСЂ: 9-05-1945)");
 		System.out.print("Your date: ");
 		String date = sc.nextLine();
 		sc.close();
 		
 		String[] numbers = date.split("-");
 		
-		Integer d = Integer.valueOf(numbers[0]);    // число месяца
-		Integer M = Integer.valueOf(numbers[1]);    // номер месяца
+		Integer d = Integer.valueOf(numbers[0]);    // С‡РёСЃР»Рѕ РјРµСЃСЏС†Р°
+		Integer M = Integer.valueOf(numbers[1]);    // РЅРѕРјРµСЂ РјРµСЃСЏС†Р°
 		
-		int m = 0;             // упорядочиваем месяцы согласно Древнему Риму
+		int m = 0;             // СѓРїРѕСЂСЏРґРѕС‡РёРІР°РµРј РјРµСЃСЏС†С‹ СЃРѕРіР»Р°СЃРЅРѕ Р”СЂРµРІРЅРµРјСѓ Р РёРјСѓ
 		if (M==1) {
 			m = 11;
 		}
@@ -30,7 +30,7 @@ public class DayCalendar {
 			}
 		}
 		
-		Integer y = Integer.valueOf(numbers[2]);     // номер года согласно Древнему Риму
+		Integer y = Integer.valueOf(numbers[2]);     // РЅРѕРјРµСЂ РіРѕРґР° СЃРѕРіР»Р°СЃРЅРѕ Р”СЂРµРІРЅРµРјСѓ Р РёРјСѓ
 		int Y = y%100;
 		if ((m==11) | (m==12)) {
 			Y = Y-1;

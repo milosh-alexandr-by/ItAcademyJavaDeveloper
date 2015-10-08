@@ -5,34 +5,34 @@ public class StringHalf {
 
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);               // создаём объект класса Scanner
+		Scanner sc = new Scanner(System.in);               // СЃРѕР·РґР°С‘Рј РѕР±СЉРµРєС‚ РєР»Р°СЃСЃР° Scanner
 		System.out.print("Enter yuor string: ");
-		String yourString = sc.nextLine();                 // ввод вашей строки с клавиатуры
-		int numberOfCharacter = yourString.length();       // вычисляем количество символов в строке
+		String yourString = sc.nextLine();                 // РІРІРѕРґ РІР°С€РµР№ СЃС‚СЂРѕРєРё СЃ РєР»Р°РІРёР°С‚СѓСЂС‹
+		int numberOfCharacter = yourString.length();       // РІС‹С‡РёСЃР»СЏРµРј РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РІ СЃС‚СЂРѕРєРµ
 		System.out.println("Number of characters in your string: " + numberOfCharacter + ".");
 		sc.close();
 		
-		// вывести сообщение об ошибке, если ввели только один символ
+		// РІС‹РІРµСЃС‚Рё СЃРѕРѕР±С‰РµРЅРёРµ РѕР± РѕС€РёР±РєРµ, РµСЃР»Рё РІРІРµР»Рё С‚РѕР»СЊРєРѕ РѕРґРёРЅ СЃРёРјРІРѕР»
 		if (numberOfCharacter == 1) {
-			System.out.println("Вы ввели строку только с одним символом, и её нельзя разбить на две строки");
+			System.out.println("Р’С‹ РІРІРµР»Рё СЃС‚СЂРѕРєСѓ С‚РѕР»СЊРєРѕ СЃ РѕРґРЅРёРј СЃРёРјРІРѕР»РѕРј, Рё РµС‘ РЅРµР»СЊР·СЏ СЂР°Р·Р±РёС‚СЊ РЅР° РґРІРµ СЃС‚СЂРѕРєРё");
 		}
 		
-		// проверяем, чётное или нечётеное количество символов в строке
+		// РїСЂРѕРІРµСЂСЏРµРј, С‡С‘С‚РЅРѕРµ РёР»Рё РЅРµС‡С‘С‚РµРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РІ СЃС‚СЂРѕРєРµ
 		if (numberOfCharacter%2 != 0) {
-			System.out.println("У вас нечётное количество символов в строке, поэтому разобъём её на две строки"
-					+ " по " + ((numberOfCharacter/2)+1) + " и " + numberOfCharacter/2 + " символов" + ".");
-			String newFirstString = yourString.substring(0, ((numberOfCharacter/2)+1));         // создаём первую новую строку из первой половинки
-			String newSecondString = yourString.substring(((numberOfCharacter/2)+1));           // создаём вторую новую строку из второй половинки
+			System.out.println("РЈ РІР°СЃ РЅРµС‡С‘С‚РЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РІ СЃС‚СЂРѕРєРµ, РїРѕСЌС‚РѕРјСѓ СЂР°Р·РѕР±СЉС‘Рј РµС‘ РЅР° РґРІРµ СЃС‚СЂРѕРєРё"
+					+ " РїРѕ " + ((numberOfCharacter/2)+1) + " Рё " + numberOfCharacter/2 + " СЃРёРјРІРѕР»РѕРІ" + ".");
+			String newFirstString = yourString.substring(0, ((numberOfCharacter/2)+1));         // СЃРѕР·РґР°С‘Рј РїРµСЂРІСѓСЋ РЅРѕРІСѓСЋ СЃС‚СЂРѕРєСѓ РёР· РїРµСЂРІРѕР№ РїРѕР»РѕРІРёРЅРєРё
+			String newSecondString = yourString.substring(((numberOfCharacter/2)+1));           // СЃРѕР·РґР°С‘Рј РІС‚РѕСЂСѓСЋ РЅРѕРІСѓСЋ СЃС‚СЂРѕРєСѓ РёР· РІС‚РѕСЂРѕР№ РїРѕР»РѕРІРёРЅРєРё
 			System.out.println("Your new first string: " + newFirstString + "\n" + "Your new second string: " + newSecondString);
 		}
 		else {
-			System.out.println("Разобъём вашу строку на две строки по " + numberOfCharacter/2 + " символов" + ".");
+			System.out.println("Р Р°Р·РѕР±СЉС‘Рј РІР°С€Сѓ СЃС‚СЂРѕРєСѓ РЅР° РґРІРµ СЃС‚СЂРѕРєРё РїРѕ " + numberOfCharacter/2 + " СЃРёРјРІРѕР»РѕРІ" + ".");
 			String newFirstString = yourString.substring(0, numberOfCharacter/2);
 			String newSecondString = yourString.substring(numberOfCharacter/2);
 			System.out.println("Your new first string: " + newFirstString + "\n" + "Your new second string: " + newSecondString);
 		}
 		
-		// ERROR: исправить окончания слова "соимвол", в зависимости от числа
+		// ERROR: РёСЃРїСЂР°РІРёС‚СЊ РѕРєРѕРЅС‡Р°РЅРёСЏ СЃР»РѕРІР° "СЃРѕРёРјРІРѕР»", РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ С‡РёСЃР»Р°
 		
 	}
 

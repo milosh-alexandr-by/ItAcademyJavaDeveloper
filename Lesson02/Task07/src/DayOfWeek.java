@@ -10,9 +10,9 @@ public class DayOfWeek {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter yuor number: ");
 		
-		if (sc.hasNextInt()) {                                               // ïðîâåðÿåì ââåäåíî ëè ÷èñëî
+		if (sc.hasNextInt()) {                                               // Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ Ð²Ð²ÐµÐ´ÐµÐ½Ð¾ Ð»Ð¸ Ñ‡Ð¸ÑÐ»Ð¾
 			numberOfWeek = sc.nextInt();
-			if ((numberOfWeek>=1) & (numberOfWeek<=7))                       // ïðîâåðÿåì, ÷òîáû ÷èñëî áûëî îò 1 äî 7
+			if ((numberOfWeek>=1) & (numberOfWeek<=7))                       // Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ñ‡Ð¸ÑÐ»Ð¾ Ð±Ñ‹Ð»Ð¾ Ð¾Ñ‚ 1 Ð´Ð¾ 7
 				switch (numberOfWeek) {
 				case 1: System.out.print("Monday."); break;
 				case 2: System.out.print("Tuesday."); break;
@@ -23,12 +23,12 @@ public class DayOfWeek {
 				case 7: System.out.print("Sunday."); break;
 			}
 			else {
-				System.out.println("Â íåäåëå ñåìü äíåé, ïîýòìîó ââåäèòå ÷èñëî îò 1 äî 7");			
+				System.out.println("Ð’ Ð½ÐµÐ´ÐµÐ»Ðµ ÑÐµÐ¼ÑŒ Ð´Ð½ÐµÐ¹, Ð¿Ð¾ÑÑ‚Ð¼Ð¾Ñƒ Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð¾Ñ‚ 1 Ð´Ð¾ 7");			
 			}
 			
 		}
 		else {
-			System.out.print("Îøèáêà: ââåäèòå ÷èñëî îò 1 äî 7: ");
+			System.out.print("ÐžÑˆÐ¸Ð±ÐºÐ°: Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð¾Ñ‚ 1 Ð´Ð¾ 7: ");
 		}
 		sc.close();
 		
