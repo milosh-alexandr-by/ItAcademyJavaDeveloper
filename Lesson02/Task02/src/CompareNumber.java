@@ -24,6 +24,7 @@ public class CompareNumber {
 			}
 			firstNumber = sc1.nextLine();
 			
+			
 		} while( boo1 == false);
 		
 		boolean boo2 = false;
@@ -40,20 +41,21 @@ public class CompareNumber {
 			}
 			secondNumber = sc2.nextLine();
 			
-		
+			
 		} while( boo2 == false);
+		
 		
 		// преобразовываем наши строки firstNumber и secondNumber в числа
 		Double d1 = Double.valueOf(firstNumber);
 		Double d2 = Double.valueOf(secondNumber);
-		
+			
 		// и сравниваем их
 		if (d1.equals(d2)) {
 			System.out.print("Числа равны: " + d1 +  " = " + d2);
 		} 
 		else {
 			if (d1 > d2) {
-				System.out.print("Первое число больше второго: " + d1 + " > " + d2);
+				System.out.printf("Первое число больше второго: " + d1 + " > " + d2);
 			}
 			else {
 				System.out.print("Второе число больше первого: " + d1 + " < " + d2);

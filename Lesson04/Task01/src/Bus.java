@@ -26,7 +26,7 @@ public class Bus {
 	public static void thisRoute(int numberOfRoute1, Bus[] massiv) {
 		System.out.println();
 		int numberOfRoute = numberOfRoute1;
-		System.out.printf("%-2s%-15s%-15s%-15s%-15s%-15s%-15s%n", "�  | ",
+		System.out.printf("%-2s%-15s%-15s%-15s%-15s%-15s%-15s%n", "№  | ",
 				"DriverSurname", "busNumber", "routeNumber", "busBrand",
 				"yearBeginUse", "mileage");
 		System.out
@@ -49,7 +49,7 @@ public class Bus {
 	public static void thisYear(int yearOfBeginUse1, Bus[] massiv1) {
 		System.out.println();
 		int yearOfBeginUse = yearOfBeginUse1;
-		System.out.printf("%-2s%-15s%-15s%-15s%-15s%-15s%-15s%n", "�  | ",
+		System.out.printf("%-2s%-15s%-15s%-15s%-15s%-15s%-15s%n", "№  | ",
 				"DriverSurname", "busNumber", "routeNumber", "busBrand",
 				"yearBeginUse", "mileage");
 		System.out
@@ -72,7 +72,7 @@ public class Bus {
 	public static void thisMileage(int mileageOf1, Bus[] massiv2) {
 		System.out.println();
 		int mileageOf = mileageOf1;
-		System.out.printf("%-2s%-15s%-15s%-15s%-15s%-15s%-15s%n", "�  | ",
+		System.out.printf("%-2s%-15s%-15s%-15s%-15s%-15s%-15s%n", "№  | ",
 				"DriverSurname", "busNumber", "routeNumber", "busBrand",
 				"yearBeginUse", "mileage");
 		System.out

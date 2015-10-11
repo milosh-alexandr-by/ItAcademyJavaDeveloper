@@ -383,7 +383,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="__tOcUHAlEeW6Frso3-WG_g" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_8YfYUHApEeWY8uihzJbiWQ" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="&#x41f;&#x435;&#x447;&#x430;&#x442;&#x44c;" enabled="false" command="__cw-kXAlEeW6Frso3-WG_g"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_-ACFcHBLEeWJA5sTXEtNuQ" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="&#x41f;&#x435;&#x447;&#x430;&#x442;&#x44c;" enabled="false" command="__cw-kXAlEeW6Frso3-WG_g"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="__tOcUXAlEeW6Frso3-WG_g" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -416,7 +416,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="__tPDYHAlEeW6Frso3-WG_g" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_8YjpwnApEeWY8uihzJbiWQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="&#x417;&#x430;&#x43a;&#x440;&#x435;&#x43f;&#x438;&#x442;&#x44c; &#x440;&#x435;&#x434;&#x430;&#x43a;&#x442;&#x43e;&#x440;" type="Check" command="__cwXe3AlEeW6Frso3-WG_g"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_-AG98HBLEeWJA5sTXEtNuQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="&#x417;&#x430;&#x43a;&#x440;&#x435;&#x43f;&#x438;&#x442;&#x44c; &#x440;&#x435;&#x434;&#x430;&#x43a;&#x442;&#x43e;&#x440;" type="Check" command="__cwXe3AlEeW6Frso3-WG_g"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="__tPDYXAlEeW6Frso3-WG_g" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

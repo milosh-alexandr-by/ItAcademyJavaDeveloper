@@ -7,12 +7,12 @@ public class DayCalendar {
 		
 		Scanner sc = new Scanner(System.in);
 //		sc.useLocale(Locale.US);
-		System.out.println("Введите дату в формате: число.месяц.год. (Нарпример: 9-05-1945)");
+		System.out.println("Введите дату в формате: число.месяц.год. (Нарпример: 9.05.1945)");
 		System.out.print("Your date: ");
 		String date = sc.nextLine();
 		sc.close();
 		
-		String[] numbers = date.split("-");
+		String[] numbers = date.split("\\.");
 		
 		Integer d = Integer.valueOf(numbers[0]);    // число месяца
 		Integer M = Integer.valueOf(numbers[1]);    // номер месяца

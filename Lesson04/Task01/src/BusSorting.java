@@ -18,7 +18,7 @@ public class BusSorting {
 		arr[8] = new Bus("Pushkin", 1200, 44, "Ikarus", 2001, 10000);
 		arr[9] = new Bus("Prokopovich", 1250, 77, "Mersedes-benz", 2015, 300);
 
-		System.out.printf("%-2s%-15s%-15s%-15s%-15s%-15s%-15s%n", "�  | ",
+		System.out.printf("%-2s%-15s%-15s%-15s%-15s%-15s%-15s%n", "№  | ",
 				"DriverSurname", "busNumber", "routeNumber", "busBrand",
 				"yearBeginUse", "mileage");
 		System.out.println("-----------------------------------------------------------------------------------------");

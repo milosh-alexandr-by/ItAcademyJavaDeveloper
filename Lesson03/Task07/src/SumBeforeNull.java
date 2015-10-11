@@ -4,7 +4,7 @@ public class SumBeforeNull {
 	public static void main(String[] args) {
 		int ar[] = new int[10];
 		for (int i=0; i<10; i++) {
-			ar[i] = (int)((Math.random()*5));
+			ar[i] = (int)((Math.random()*10));
 		}
 		
 		System.out.print("Массив случайных чисел от 0 до 5: ");
@@ -16,9 +16,11 @@ public class SumBeforeNull {
 		}
 		
 		int sum = 0;
+		int numberOfNull = 0;
 		for (int i=0; i<10; i++) {
 			if (ar[i]!=0) {
 				sum = sum + ar[i];
+				numberOfNull = numberOfNull +1;
 			}
 			else break;
 		}
@@ -27,7 +29,12 @@ public class SumBeforeNull {
 			System.out.println("Нулю равен первый элемент. Невозможно удовлетворить условию задачи.");
 		}
 		else {
-			System.out.println("Сумма элементов до первого нуля равна: " + sum + ".");
+			if (numberOfNull == 10) {
+				System.out.println("В массиве нет ни одного нуля.");
+			}
+			else {
+				System.out.println("Сумма элементов до первого нуля равна: " + sum + ".");
+			}
 		}
 	}
 

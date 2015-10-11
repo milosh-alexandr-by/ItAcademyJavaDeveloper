@@ -43,7 +43,7 @@ public class Calculator {
 		case '+': System.out.println(firstCharacter+secondCharacter); break;
 		case '-': System.out.println(firstCharacter-secondCharacter); break;
 		case '*': System.out.println(firstCharacter*secondCharacter); break;
-		case '/': System.out.println(firstCharacter/secondCharacter); break;
+		case '/': System.out.printf("%.2f%n", firstCharacter/secondCharacter); break;
 		}
 		System.out.println("Для выхода нажмите \"q\".");
 		
