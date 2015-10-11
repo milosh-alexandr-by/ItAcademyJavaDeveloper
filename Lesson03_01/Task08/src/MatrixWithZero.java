@@ -1,0 +1,65 @@
+
+import java.util.Scanner;
+
+public class MatrixWithZero {
+
+	public static void main(String[] args) {
+
+		
+		System.out.println("Введите размеры матрицы.");
+		Scanner sc1 = new Scanner(System.in);
+		System.out.println("Количество строк M: ");
+		Integer m = sc1.nextInt();
+		
+		Scanner sc2 = new Scanner(System.in);
+		System.out.println("Количество столбцов: N");
+		Integer n = sc2.nextInt();
+		
+		Integer[][] matrix = new Integer[m][n];
+		for (int i=0; i<m; i++) {
+			for (int j=0; j<n; j++) {
+				matrix[i][j] = (int) (Math.random()*10);
+			}
+		}
+		for (int i=0; i<m; i++) {
+			for (int j=0; j<n; j++) {
+				System.out.printf("%4d", matrix[i][j]);
+			}
+		System.out.println();	
+		}
+
+		Integer[][] newMatrix = new Integer[m][n];
+		
+		for (int i=0; i<m; i++) {
+			for (int j=0; j<n; j++) {
+				int sum = 0;
+				for (int stolb=0; stolb<n; stolb++) {
+					if (matrix[i][stolb] == 0) {
+						sum = sum +1;
+					}
+				for (int strok=0; strok<m; strok++) {
+					if (matrix[strok][j] == 0) {
+						sum = sum +1;
+					}
+				}
+				if (sum == 0) {
+					newMatrix[i][j] = matrix[i][j];
+				}
+				else {
+					newMatrix[i][j] = 0;
+				}
+				}
+			}
+		}
+		
+		System.out.println("Новая матрица:");
+		for (int i=0; i<m; i++) {
+			for (int j=0; j<n; j++) {
+				System.out.printf("%4d", newMatrix[i][j]);
+			}
+		System.out.println();	
+		}
+		
+	}
+
+}

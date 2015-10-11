@@ -1,0 +1,20 @@
+INDEX VERSION 1.127+K:\ItAcademyJavaDeveloper\Lesson04\.metadata\.plugins\org.eclipse.jdt.core
+886683362.index
+62082584.index
+1417373046.index
+3356651959.index
+4190393819.index
+139984942.index
+1859305288.index
+830809592.index
+4208817165.index
+3171766299.index
+3640479029.index
+3419506419.index
+244556869.index
+1660626530.index
+3598106455.index
+569310835.index
+2893968221.index
+3515297384.index
+2579221789.index

@@ -9,6 +9,9 @@ public class HelloUser {
 		System.out.println("Введите имя");
 		String userName = sc.nextLine();
 		System.out.println("Ваше имя" + userName + "!");
+		
+
+		
 
 	}
 

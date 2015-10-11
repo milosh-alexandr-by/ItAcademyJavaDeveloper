@@ -1,0 +1,82 @@
+
+import java.util.Scanner;
+
+public class ChangeCharacter {
+
+	public static void main(String[] args) {
+		
+
+
+
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter tour text: ");
+		String text = sc.nextLine();
+//		System.out.println(text);
+////		char ch1 = text.charAt(3);
+////		System.out.println(ch1);
+		System.out.print("Введите номер символа, который вы хотите заменить: ");
+		int n = sc.nextInt();
+//		System.out.println(numberOgCharacter);
+//		System.out.print("Введите букву для замены: ");
+//		String characterString = sc.nextLine();
+//		char symbol = characterString.charAt(0);
+//		
+		System.out.print("Введите букву для замены: ");
+		Scanner sc2 = new Scanner(System.in);
+		String str0 = sc2.nextLine();
+		char ch = str0.charAt(0);
+//		System.out.println(ch);
+//		
+////		System.out.println(character);
+//		
+//		String[] s = text.split(" ");
+//		int dlina = s.length;
+//		for (int j=0; j<dlina; j++){
+////			System.out.println(s[j]);
+//		}
+//		
+//		
+//		
+//		for (int i=0; i<dlina; i++) {
+//			char[] slovo = s[i].toCharArray();
+//				slovo[numberOgCharacter] = ch;
+//				String p = String.valueOf(slovo);
+//				System.out.print(slovo);
+//			}
+		
+		int k = n-1;
+		int p = n-1;
+		char symbol = ch;
+		
+		String[] str = text.split(" ");
+//		for (int i=0; i<str.length; i++){
+//			System.out.print(str[i] + " ");
+//		}
+		
+		
+		for (int i=0; i<str.length; i++){
+			char[] arr = str[i].toCharArray();
+			if (str[i].endsWith(":")|str[i].endsWith(",")|str[i].endsWith("!")|str[i].endsWith("\\.")|str[i].endsWith("?")|str[i].endsWith(";")) {
+				p = n-2;
+			}
+			if (arr.length>=p) {
+				for (int j=0; j<arr.length; j++){
+					arr[k] = symbol;
+					System.out.print(arr[j]);
+				}
+			}
+			else {
+				System.out.print(str[i]);
+			}
+			System.out.print(" ");	
+		}
+		}
+		
+//	for (int i=0; i<str.length; i++){
+//		System.out.print(str[i] + " ");
+//	}
+	
+
+}
+ // a bb ccc dddd a, bb. ccc: dddd;
+ // I'll kill you! Bastard.

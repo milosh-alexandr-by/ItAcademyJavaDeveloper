@@ -1,0 +1,47 @@
+
+import java.util.Scanner;
+
+public class ChangeCharacter {
+
+	public static void main(String[] args) {
+
+
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter tour text: ");
+		String text = sc.nextLine();
+		System.out.println(text);
+		System.out.print("Введите номер символа, который вы хотите заменить: ");
+		String numberOgCharacter = sc.nextLine();
+		System.out.println(numberOgCharacter);
+		System.out.print("Введите букву для замены: ");
+		String characterString = sc.nextLine();
+		char character = characterString.charAt(0);
+		
+//		System.out.println(character);
+		
+		String[] s = text.split(" ");
+		int dlina = s.length;
+		for (int j=0; j<dlina; j++){
+			System.out.println(s[j]);
+		}
+		
+		
+		
+		for (int i=0; i<dlina; i++) {
+			char[] slovo = s[i].toCharArray();
+			for (int j=0; j<slovo.length; j++){
+				System.out.println(slovo[j]);
+			}
+//			if (slovo.length<dlina) {
+//				slovo[i] = character;
+//				System.out.println(s[i]);
+//			}
+			
+		}
+		
+		
+	}
+
+}
+
+ // I'll kill you! Bastard.

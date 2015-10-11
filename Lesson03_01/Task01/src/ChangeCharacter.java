@@ -1,0 +1,47 @@
+
+import java.util.Scanner;
+
+public class ChangeCharacter {
+
+	public static void main(String[] args) {
+		
+
+
+
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter tour text: ");
+		String text = sc.nextLine();
+
+		System.out.print("Введите номер символа, который вы хотите заменить: ");
+		int n = sc.nextInt();
+
+		System.out.print("Введите букву для замены: ");
+		Scanner sc2 = new Scanner(System.in);
+		String str0 = sc2.nextLine();
+		char ch = str0.charAt(0);
+		
+		int k = n-1;
+		int p = n-1;
+		char symbol = ch;
+		
+		String[] str = text.split(" ");
+		
+		for (int i=0; i<str.length; i++){
+			char[] arr = str[i].toCharArray();
+			if (str[i].endsWith(":")|str[i].endsWith(",")|str[i].endsWith("!")|str[i].endsWith("\\.")|str[i].endsWith("?")|str[i].endsWith(";")) {
+				p = n;
+			}
+			if (arr.length>p) {
+				for (int j=0; j<arr.length; j++){
+					arr[k] = symbol;
+					System.out.print(arr[j]);
+				}
+			}
+			else {
+				System.out.print(str[i]);
+			}
+			System.out.print(" ");	
+		}
+		}
+		
+}

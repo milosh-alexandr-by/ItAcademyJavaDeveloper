@@ -1,0 +1,40 @@
+
+import java.util.Scanner;
+
+public class HelloUser {
+
+	public static void main(String[] args) {
+		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Введите имя");
+//		String userName = sc.nextLine();
+//		System.out.println("Ваше имя" + userName + "!");
+		
+//		int q = 5/2;
+//		System.out.println(q);
+//		float r = 5/2;
+//		System.out.println(r);
+//		float m = (float)5/2;
+//		System.out.println(m);
+		
+//		Integer n = 6546;
+//		String g = n.toString();
+//		String s = "abc";
+//		int [] nir = new int [2];
+//        System.out.println(g);
+		
+//		String s = "abcd";
+//		String q = new String(String s);
+		
+		for (int i=1; i<=10; i++){
+			System.out.print(i + "\t");
+		}
+		System.out.println();
+		for (int i=1; i<=10; i++){
+			int p = (int)Math.pow(3, i);
+			System.out.print(p + "\t");
+		}
+
+	}
+
+}
