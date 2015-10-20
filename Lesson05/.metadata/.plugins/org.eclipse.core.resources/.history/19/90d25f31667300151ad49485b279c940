@@ -1,0 +1,6 @@
+
+public class AutoShop extends ObjectsOfCities {
+	
+	String name = "Автосалон"; 
+
+}

@@ -9,6 +9,7 @@ public class Factorial {
 		System.out.print("Enter n: ");
 		Integer n= sc.nextInt();
 		sc.close();
+		
 		int f = 1;
 		if (n<0) {
 			System.out.println("Факториал от отрицательного числа брать нельзя.");

@@ -9,6 +9,8 @@ public class DeleteNotLetter {
 		System.out.print("Enter your text: ");
 		String text = sc.nextLine();
 		
+		// если наш символ - буква или пробел - то оставляем
+		// иначе игнорим
 		char[] symbol = text.toCharArray();
 		for (int i=0; i<symbol.length; i++){
 			if (Character.isLetter(symbol[i]) | symbol[i]==' ')

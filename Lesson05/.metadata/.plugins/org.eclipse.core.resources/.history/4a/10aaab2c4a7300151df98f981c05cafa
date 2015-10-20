@@ -1,0 +1,10 @@
+
+public class WorldOfTransport {
+
+	public static void main(String[] args) {
+		
+		Sedan audi = new Sedan("Audi");
+		audi.move();
+	}
+
+}

@@ -1,0 +1,12 @@
+
+public class Player implements Men {
+
+	public String name;
+	int moneyOfPlayer = 1000;
+	
+	public Player (String name) {
+		this.name = name;
+	}
+	
+
+}

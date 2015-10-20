@@ -12,10 +12,12 @@ public class DayCalendar {
 		String date = sc.nextLine();
 		sc.close();
 		
-		String[] numbers = date.split("\\.");
+		String[] numbers = date.split("\\.");       // разбиваем строку на массив строк, разделённых точкой
 		
+		// преобразуем строки в числа
 		Integer d = Integer.valueOf(numbers[0]);    // число месяца
 		Integer M = Integer.valueOf(numbers[1]);    // номер месяца
+		Integer y = Integer.valueOf(numbers[2]);    // номер года
 		
 		int m = 0;             // упорядочиваем месяцы согласно Древнему Риму
 		if (M==1) {
@@ -30,12 +32,13 @@ public class DayCalendar {
 			}
 		}
 		
-		Integer y = Integer.valueOf(numbers[2]);     // номер года согласно Древнему Риму
+		// номер года согласно Древнему Риму
 		int Y = y%100;
-		if ((m==11) | (m==12)) {
+		if ((m==11) | (m==12)) {       // то есть если в 1990 году - январь, то согласно Древнему Риму - это ноябрь, а значит это 1989-й год
 			Y = Y-1;
 		}
 		
+		// подставляем наши данные в формулу
 		int c = y/100;
 		int summ1 =(13*m-1)/5;
 		int summ2 = Y/4;

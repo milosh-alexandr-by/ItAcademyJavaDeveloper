@@ -1,0 +1,29 @@
+
+public class TableOfSquares {
+
+	public static void main(String[] args) {
+
+		/* 
+		  Написать таблицу умножения не используя массивов
+		*/
+
+		for (int i = 0; i < 10; i++) {
+			System.out.printf("%6d", i);
+		}
+		System.out.println();
+		System.out.println("-------------------------------------------------------------------------");
+		
+		int[][] multiplyTab  = new int[10][10];
+
+		for (int i = 0; i < 10; i++) {
+		    for (int j = 0; j < 10; j++) {
+		        multiplyTab[i][j] = (i+1)*(j+1);
+		        System.out.printf("%6d", multiplyTab[i][j]);
+		   }
+		   System.out.println();
+		}
+		
+		
+	}
+
+}

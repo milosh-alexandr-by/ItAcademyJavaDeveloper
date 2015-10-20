@@ -3,12 +3,14 @@ import java.util.Scanner;
 public class Diagonal {
 
 	public static void main(String[] args) {
+		
+		// Алгоритм работает только для матриц от 1 до 9!
 
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Введите n: ");
+		System.out.print("Введите число от 1 до 9: n = ");
 		Integer n = sc.nextInt();
 
-		// создадим матрицу с помощью Math.random
+		// создадим матрицу (n x n) и заполним случайными числами от 0 до 10
 		int myMatrix[][] = new int[n][n];
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
@@ -16,13 +18,15 @@ public class Diagonal {
 			}
 		}
 
-		// эта матрица, чтобы показать, что алгоритм работает
+//       эта матрицы, чтобы показать, что алгоритм работает
+//       n = 8;
 //		 int myMatrix[][] = {{1,1,0,0,7,1,9,1}, {2,2,2,4,2,2,1,1},
 //		 {3,3,3,5,1,3,2,3}, {4,4,2,3,4,3,4,4}, {3,3,5,6,5,5,8,5},
 //		 {1,8,6,6,6,8,6,4}, {0,8,9,7,7,9,7,3}, {9,9,0,8,5,8,8,8}};
+//       n = 4;
+//		 int myMatrix[][] = {{9,1,9,9}, {2,9,9,3,}, {5,9,9,1}, {9,9,7,9}};
 
 		// выведем матрицу на экран
-		// n = 8;
 		for (int i = 0; i < n; i++) {
 			if (i > 0) {
 				System.out.println();
@@ -31,7 +35,6 @@ public class Diagonal {
 				System.out.print(myMatrix[i][j] + "  ");
 			}
 		}
-
 		System.out.println();
 
 		// выведем элементы главной дигаонали
@@ -44,8 +47,7 @@ public class Diagonal {
 			System.out.print(myMatrix[r][r] + ", ");
 		}
 
-		// представим, что номера столбцов - это цифры от 1 до n: 1, 2, 3, 4,
-		// 5...
+		// представим, что номера столбцов - это цифры от 1 до n: 1, 2, 3, 4, 5...
 		// теперь перебираем все варианты, как могут стоять столбцы: 12345;
 		// 12354; 12435...
 		// видно, что это напоминает числа
@@ -55,14 +57,16 @@ public class Diagonal {
 		// и чтобы все цифры были от 1 до n
 
 		// находим n - значное и n+1 значное числа
-
 		int maxCharacter = (int) Math.pow(10, n);
 		int minCharacter = (int) Math.pow(10, n - 1);
-
 		// в этом промежутке мы будем комбинировать столбцы
-		int ifNotMatrix = 0;
-		for (int i = minCharacter; i < (maxCharacter - 1); i++) {
-
+		// то есть. есил матрица 4х4 то maxCharacter=10000  minCharacter=1000
+		
+	int ifNotMatrix = 0;      // создадим переменную, которая будет считать количество созданных матриц 
+	
+		
+		for (int i = minCharacter; i < (maxCharacter - 1); i++) {      // то есть если матрица 4х4 то мы проверим
+			                                                           // числа от 1000 до 9999
 			// делаем из числа массив massiv[]
 			// например число 23541 будет массивом {2, 3, 5, 4, 1}
 			int t = i;
@@ -84,15 +88,12 @@ public class Diagonal {
 						sum = sum + 1;
 					}
 				}
-			} 
-			
-			if (sum == 0) {
-
-				chislo = i;
+			} 			
+			if (sum == 0) {         // если sum == 0 то число состоит из разных цифр
 
 				// проверим на условие, чтобы цифры попадали в наш диапазон
 				// то есть, чтобы цифры были от 1 до n
-
+				chislo = i;
 				// создаём из числа матрицу
 				int t1 = chislo;
 				Integer massiv1[] = new Integer[n];
@@ -101,19 +102,17 @@ public class Diagonal {
 					massiv1[i1] = q;
 					t1 = t1 / 10;
 				}
-
 				// проверяем каждую цифру, чтобы она была между 1 и n
 				// включительно
-				int prov = 0;
+				int prov = 0;  //  перемнная prov проверяет, чтобы все цифры п были между 1 и n
 				for (int i5 = 0; i5 < n; i5++) {
 					if ((massiv1[i5] >= 1) & (massiv1[i5] <= n)) {
 						prov = prov + 0;
 					} else {
 						prov = prov + 1;
 					}
-				}
-				
-				if (prov == 0) {
+				}				
+				if (prov == 0) {     // если prov == 0 то все цифры 1 и n
 
 					// преобразуем число chislo в массив
 					int tt = i;
@@ -123,33 +122,32 @@ public class Diagonal {
 						chislo1[i6] = (q6 - 1);
 						tt = tt / 10;
 					}
-
 					// создадим новую матрицу согласно числу
 					Integer newMatrix[][] = new Integer[n][n];
 					for (int ds = 0; ds <= (n - 1); ds++) {
 						for (int jr = 0; jr <= (n - 1); jr++) {
 							newMatrix[ds][jr] = myMatrix[ds][chislo1[jr]];
 						}
-
 					}
 
 					// загоним элементы диагонали в массив
 					int masel[] = new int[n];
 					for (int or = 0; or < n; or++) {
 						masel[or] = newMatrix[or][or];
-
 					}
 
 					// проверим, идут ли элементы массива, то есть главной
 					// диагонали по возрастанию
-					int sok = 0;
+					int sok = 0;       // переменная sok проверяет идут ли элементы главной диагонали по возрастанию
 					for (int sk = 0; sk < (n - 1); sk++) {
 						if (masel[sk] >= masel[sk + 1]) {
 							sok = sok + 1;
 						}
-					}
-					
-					if (sok == 0) {
+					}					
+					if (sok == 0) {                  
+						// если smm=0 и prov=0 и sok=0
+						// то в числе все цифры разные, не выходят за пределы n и диагональ идёт по возрастанию
+						// создаём матрицу и выводим её на экран и главную дигональ
 						System.out.println();
 						System.out.println("Новая матрица:");
 						for (int i11 = 0; i11 < n; i11++) {
@@ -169,24 +167,28 @@ public class Diagonal {
 							}
 							System.out.print(newMatrix[r][r] + ", ");
 						}
-					ifNotMatrix = ifNotMatrix +1;	
+					ifNotMatrix = ifNotMatrix +1;	// так как мы нашли матрицу то счётчик увеличиваем на единицу
 
-					}
+					} // иначе sok!=0 то есть диагональ идёт не по возрастанию
+					  // берём следующее число
 					
 
 
-				}
+				} // иначе prov!=0 в числе есть цифры больше, чем n
+			      // берём следующее число
 
 				
-			}
+			}   // иначе в числе есть одинаковые цифры, то есть sum!=0 (не сможем составить матрицу)
+			    // берём следующее число
 			
 			
 
 		}
-		
-		if (ifNotMatrix == 0) {
-			System.out.println("Ни одной матрицы не построено.");
-		}
+	
+	// если переменная ifNotMatrix равна нулю, то ни одной матрицы мы не создали
+	if (ifNotMatrix == 0) {
+		System.out.println("Ни одной матрицы не построено.");
+	}
 
 		sc.close();
 	}

@@ -1,0 +1,6 @@
+
+public abstract class GroundTransport {
+	
+	public abstract void move();
+
+}

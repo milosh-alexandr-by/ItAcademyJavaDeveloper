@@ -7,6 +7,7 @@ public class MaxAndIndex {
 		for (int i=0; i<15; i++) {
 			myArray[i] = (int)(Math.random()*100);
 		}
+		
 		System.out.print("Массив случайных чисел от 0 до 100: ");
 		for (int i=0; i<15; i++) {
 			if (i==14) {
@@ -14,6 +15,7 @@ public class MaxAndIndex {
 			}
 			System.out.print(myArray[i] + ", ");
 		}
+		
 		int k = 0;
 		int max = myArray[0];
 		for (int i=1; i<15; i++) {

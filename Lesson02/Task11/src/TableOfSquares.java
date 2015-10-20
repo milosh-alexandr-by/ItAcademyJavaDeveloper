@@ -7,15 +7,33 @@ public class TableOfSquares {
 		  Написать таблицу умножения не используя массивов
 		*/
 
-		System.out.print("  ");
-		for (int i=1; i<=4; i++) {
-			System.out.print(i + " ");
+		System.out.print("   |");
+		for (int i = 1; i < 11; i++) {
+			System.out.printf("%4d", i);
 		}
-		System.out.println("5");
+		System.out.println();
+		System.out.println("---------------------------------------------");
 		
-		for (int i=1; i<=11; i++) {
-			System.out.print("-");
-		}	
+		int[][] multiplyTab  = new int[10][10];
+
+		for (int i = 0; i < 10; i++) {
+			if (i==9) {
+				System.out.print((i+1) + " |");
+			    for (int j = 0; j < 10; j++) {
+			        multiplyTab[i][j] = (i+1)*(j+1);
+			        System.out.printf("%4d", multiplyTab[i][j]);
+			   }
+			   System.out.println();
+			}
+			else {
+			System.out.print((i+1) + "  |");
+		    for (int j = 0; j < 10; j++) {
+		        multiplyTab[i][j] = (i+1)*(j+1);
+		        System.out.printf("%4d", multiplyTab[i][j]);
+		   }
+		   System.out.println();
+			}
+		}
 		
 		
 	}

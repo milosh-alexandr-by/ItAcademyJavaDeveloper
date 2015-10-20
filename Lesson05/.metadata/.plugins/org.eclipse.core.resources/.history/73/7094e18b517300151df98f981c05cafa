@@ -1,0 +1,4 @@
+
+public class YourHome extends ObjectsOfCities implements Minsk {
+
+}

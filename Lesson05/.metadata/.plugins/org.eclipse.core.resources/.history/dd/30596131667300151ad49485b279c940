@@ -1,0 +1,6 @@
+
+public class CenterOfCity extends ObjectsOfCities  {
+	
+	String name = "Центр города"; 
+
+}

@@ -6,17 +6,18 @@ public class CorrectRouble {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
+		
 		System.out.print("Введите количество рублей: ");
 		Integer rouble = sc.nextInt();
 		sc.close();
 				
-		int g = rouble%100;           // нам важны только две последние цифры числа
+		int g = rouble%100;           // нам важны только две последние цифры числа, потому что от них зависит склонение
 				
-		if ((g >= 11) & ( g<= 14))  {              // прописываем "рублей" для чисел 11, 12, 13, 14
+		if ((g >= 11) & (g <= 14))  {              // прописываем "рублей" для чисел 11, 12, 13, 14
 			System.out.println(rouble + " рублей.");
 		}
 		else {                                          // прописываем значения для остальных окончаний
-			int p = g%10;
+			int p = g%10;                               // учитываем только последнюю цифру
 			switch (p){
 			case 1:
 				System.out.println(rouble + " рубль."); break;

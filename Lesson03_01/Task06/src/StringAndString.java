@@ -1,26 +1,63 @@
 import java.util.Scanner;
 
-
 public class StringAndString {
 
 	public static void main(String[] args) {
-	
+
+		// выводим на экран две строки с клавиатуры
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter tour text: ");
+		System.out.print("Enter first text: ");
 		String text = sc.nextLine();
+		char[] str = text.toCharArray();
+		System.out.print("Enter second text: ");
+		String text2 = sc.nextLine();
+		char[] str2 = text2.toCharArray();
 
-		String[] str = text.split(" ");
-
-		for (int i=0; i<str.length; i++){
-			char[] arr = str[i].toCharArray();
-				for (int j=0; j<arr.length; j++){
-					System.out.print(arr[j]);
-				}
-			System.out.print(" ");	
+		// если длины строк не равны - то сразу понятно, что не перестановка
+		if (str.length != str2.length) {
+			System.out
+					.println("Вторая строка НЕ является перестановкой первой.");
+			System.exit(0);
 		}
-			
-		
-		
+
+		// берём каждый элемент строки и считаем, сколько таких элементов
+		// встречается
+		// например, сколько букв 'а', сколько букв 'и'
+		// и потом считаем сколько этих же букв встречается во второй строке
+		// если количество каждого символа первой строки совпало с количеством
+		// каждого символа второй строки
+		// то строки идентичны и образованы перестановкой
+
+		// считаем количество каждого элемента в первой строке
+		boolean boo = true;
+		for (int i = 0; i < str.length; i++) {
+			int sum = 0;
+			for (int j = 0; j < str.length; j++) {
+				if (str[i] == (str[j])) {
+					sum = sum + 1;
+				}
+			}
+			// считаем количество каждого элемента, который есть в первой
+			// строке, во второй строке
+			// System.out.print(str[i]);System.out.println(" - " + sum);
+			int sum2 = 0;
+			for (int k = 0; k < str.length; k++) {
+				if (str[i] == str2[k]) {
+					sum2 = sum2 + 1;
+				}
+			}
+			// если их количество не совпадает, выводим нет
+			if (sum != sum2) {
+				boo = false;
+				System.out
+						.println("Вторая строка НЕ является перестановкой первой.");
+				break;
+
+			}
+		}
+		if (boo) {
+			System.out.println("Вторая строка является перестановкой первой.");
+		}
 
 	}
 

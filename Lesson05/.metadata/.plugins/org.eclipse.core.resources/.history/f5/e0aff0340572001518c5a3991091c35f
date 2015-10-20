@@ -1,0 +1,16 @@
+
+public class Sedan extends Car {
+	
+	String brand;
+	
+	public Sedan(String brand) {
+		this.brand = brand;
+	}
+	
+	
+	public void move() {
+		System.out.println("Машина едет по дороге.");
+		System.out.println("Переопределён");
+	}
+
+}

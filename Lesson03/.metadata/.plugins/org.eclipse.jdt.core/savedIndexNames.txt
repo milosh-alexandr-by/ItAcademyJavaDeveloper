@@ -18,9 +18,9 @@ INDEX VERSION 1.127+K:\ItAcademyJavaDeveloper\Lesson03\.metadata\.plugins\org.ec
 62082584.index
 244556869.index
 569310835.index
-2547536908.index
-3419506419.index
 399127799.index
+3419506419.index
+2547536908.index
 1738588280.index
 3171766299.index
 2149117311.index

@@ -1,0 +1,62 @@
+
+import java.util.Scanner;
+
+public class WorldOfTransport {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Введите ваше имя: ");
+		String yourName = sc.nextLine();
+		System.out.println("Здравствуйте, " + yourName + ". Добро пожаловать в игру \"World of Transport\".");
+		System.out.println("1 - начать игру.");
+		System.out.println("2 - выйти из игры.");
+		Integer startOrExitGame = sc.nextInt();
+		if (startOrExitGame.equals("1")) {
+			System.out.println("Игра началась!");
+		}
+		else {
+			System.exit(0);
+		}
+		
+		Player gamer = new Player(yourName);
+			
+		System.out.println("У вас на счету " + gamer.getMoneyOfPlayer() + " долларов.");
+		
+		Cities minsk = new Cities("Минск");
+		Home yourHome = new Home("Ваш дом");
+		CenterOfCity centerOfCityOfMinsk = new CenterOfCity();
+		AutoShop autoShopOfMinsk = new AutoShop();
+		FuelStation fuelStationOfMinsk = new FuelStation();
+		Airport airportOfMinsk = new Airport();
+		
+		System.out.print("Вы находитесь: "); gamer.yourLocation(minsk, yourHome);
+		
+		System.out.print("Куда отправиться: \n1 - центр города;\n2 - автосалон;n3 - автозаправка\n4 - аэропорт.");
+		Integer choiceMove = sc.nextInt();
+		Integer choiceTransport = sc.nextInt();
+		do {
+		System.out.print("Что использовать: \n1 - ваш автомобиль;\n2 - такси;n3 - автобус.");
+		choiceTransport = sc.nextInt();
+		System.out.println("У вас нет автомобиля");
+		} while (choiceTransport != 1);
+		switch (choiceMove){
+		case 1: System.out.print("Вы прибыли: "); gamer.yourLocation(minsk, centerOfCityOfMinsk);
+		case 2: System.out.print("Вы прибыли: "); gamer.yourLocation(minsk, autoShopOfMinsk);
+		case 3: System.out.print("Вы прибыли: "); gamer.yourLocation(minsk, fuelStationOfMinsk);
+		case 4: System.out.print("Вы прибыли: "); gamer.yourLocation(minsk, airportOfMinsk);
+		}
+		switch (choiceTransport){
+		case 1: System.out.println("У вас нет автомобиля");
+		case 2: System.out.println("Стоимость поездки - 10 долларов"); gamer.getMoneyOfPlayerMinus(10);
+		case 3: System.out.println("Стоимость поездки - 1 доллар"); gamer.getMoneyOfPlayerMinus(1);
+		}
+		
+			
+		
+		
+
+		
+	}
+
+}

@@ -9,38 +9,39 @@ public class CompressionString {
 		System.out.print("Enter tour text: ");
 		String text = sc.nextLine();
 
-		// должны получит строку
-		// использовать StringBuffer
+		StringBuffer str = new StringBuffer("");
 		
 		int m = 1;
 		char[] arr = text.toCharArray();
 		for (int i=0; i<(arr.length-1); i++) {
+			// идём от нулевого элемента к предпоследнему
+			// если следующий элемент равен текущему, то m=m+1 и переходим к следующему
+			// и так до тех пор, пока следующий не будет равен текущему
+			// то есть мы запомним элемент и сколько раз подряд он встречается
 			if (arr[i] == arr[i+1]) {
 				m = m+1;
 				if (i == (arr.length-2)) {
-					System.out.print(arr[i]);System.out.print(m);
+					str.append(arr[i]);str.append(m);
 				}
 				continue;				
 			}
-			System.out.print(arr[i]);System.out.print(m);
+			str.append(arr[i]);str.append(m);
 			m = 1;
 		}
+		// когда доходим до последнего элемента, то не надо проверять следующие
+		// просто его выводим
 		if (m == 1) {
-			System.out.print(arr[arr.length-1]);System.out.print(m);
+			str.append(arr[arr.length-1]);str.append(m);
 		}
+		
+		// если сжатая строка больше базовой, то выводим базовую
+		if (str.length()>text.length()) {
+			System.out.println(text);
+		}
+		else {
+			System.out.println(str);
+		}	
 
-//		int m = 1;
-//		for (int i=0; i<str.length; i++) {
-//			if (str[])
-//		}
-//		
-//		for (int i=0; i<str.length; i++){
-//			char[] arr = str[i].toCharArray();
-//				for (int j=0; j<arr.length; j++){
-//					System.out.print(arr[j]);
-//				}
-//			System.out.print(" ");	
-//		}
 		
 	}
 

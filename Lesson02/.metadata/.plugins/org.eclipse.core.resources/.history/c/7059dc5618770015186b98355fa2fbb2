@@ -1,0 +1,23 @@
+
+import java.util.Scanner;
+
+public class SumOfSeries {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter n: ");
+		Integer n= sc.nextInt();
+		sc.close();
+		
+		System.out.println("n = " + n);
+		double sum = 0;
+		for (double i=1; i<=n; i++) {
+			sum = sum + 1/i;
+		}
+		
+		System.out.printf("Sum of series: " + "%.2f", sum);
+		
+	}
+
+}

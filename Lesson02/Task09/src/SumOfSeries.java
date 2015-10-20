@@ -9,14 +9,14 @@ public class SumOfSeries {
 		System.out.print("Enter n: ");
 		Integer n= sc.nextInt();
 		sc.close();
+		
 		System.out.println("n = " + n);
 		double sum = 0;
 		for (double i=1; i<=n; i++) {
 			sum = sum + 1/i;
-			
 		}
-		
-		System.out.println("Sum of series: " + sum);
+				
+		System.out.printf("Sum of series: " + "%.3f", sum);
 		
 	}
 

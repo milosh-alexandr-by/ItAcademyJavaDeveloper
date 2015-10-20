@@ -1,0 +1,52 @@
+
+import java.util.Scanner;
+
+public class ChangeCharacter {
+
+	public static void main(String[] args) {
+		
+		// введём текст с клавиатуры
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter tour text: ");
+		String text = sc.nextLine();
+
+		// введём номер символа, который мы хотим заменить
+		System.out.print("Введите номер символа, который вы хотите заменить: ");
+		int n = sc.nextInt();
+
+		// введём букву для замены
+		System.out.print("Введите букву для замены: ");
+		Scanner sc2 = new Scanner(System.in);
+		String str0 = sc2.nextLine();
+		char ch = str0.charAt(0);        // преобразуем введённую строку в символ char
+		
+		int k = n-1;
+		int p = n-1;
+		char symbol = ch;
+		
+		// разделим нашу строку на слова, разделённые пробелом
+		// создадим масиив str этих слов
+		String[] str = text.split(" ");
+		
+		for (int i=0; i<str.length; i++){
+			// каждое слово (каждый элемент массива str) разобъём на массив элементов char (то есть на буквы, из которого состоит слово)  
+			char[] arr = str[i].toCharArray();
+			// если слово оканчивается на : , ! . ? ; то мы не будем учитывать эти знаки
+			// тоесть если мы укажем n=7, то в слове "Привет!" восклицательный знак менять не будем
+			if (str[i].endsWith(":")|str[i].endsWith(",")|str[i].endsWith("!")|str[i].endsWith("\\.")|str[i].endsWith("?")|str[i].endsWith(";")) {
+				p = n;
+			}
+			if (arr.length>p) {
+				for (int j=0; j<arr.length; j++){
+					arr[k] = symbol;
+					System.out.print(arr[j]);
+				}
+			}
+			else {
+				System.out.print(str[i]);
+			}
+			System.out.print(" ");	
+		}
+		}
+		
+}

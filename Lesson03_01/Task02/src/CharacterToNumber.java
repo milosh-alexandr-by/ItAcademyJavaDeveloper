@@ -9,13 +9,20 @@ public class CharacterToNumber {
 		System.out.print("Enter your text: ");
 		String text = sc.nextLine();
 
+		// выведем на экран каждый символ строки через два пробела
 		char[] symbol = text.toCharArray();
 		for (int i=0; i<symbol.length; i++){
 			System.out.print(symbol[i] + "  ");
 		}
+		
+		// преобразуем верхние регистры в нижние
 		text = text.toLowerCase();
+		
 		System.out.println();
 		for (int j=0; j<text.length(); j++) {
+			// если символ является юуквой, то записываем его номер
+			// используем метод codePointAt(), который возвращает порядковый номер элемента в юникоде
+			// и отнимаем 96, т.к. номер a - это 97
 			if (Character.isLetter(symbol[j])) {
 				System.out.printf("%-3s", (text.codePointAt(j)-96));
 			}
@@ -23,11 +30,10 @@ public class CharacterToNumber {
 		}
 		
 		char p = 99;
-//		System.out.println(p);
+
 		
 		
 	}
 
 }
 
- // Sasha and Masha!

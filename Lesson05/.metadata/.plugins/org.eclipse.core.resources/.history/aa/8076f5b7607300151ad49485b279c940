@@ -1,0 +1,12 @@
+
+public class Policeman implements People {
+
+	@Override
+	public void test() {
+		// TODO Автоматически созданная заглушка метода
+		
+	}
+	
+
+
+}

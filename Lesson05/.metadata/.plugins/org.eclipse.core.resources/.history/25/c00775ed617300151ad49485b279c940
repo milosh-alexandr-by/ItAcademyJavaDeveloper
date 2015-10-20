@@ -1,0 +1,34 @@
+
+import java.util.Scanner;
+
+public class WorldOfTransport {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Введите ваше имя: ");
+		String yourName = sc.nextLine();
+		System.out.println("Здравствуйте, " + yourName + ". Добро пожаловать в игру \"World of Transport\".");
+		System.out.println("1 - начать игру.");
+		System.out.println("2 - выйти из игры.");
+		String startOrExitGame = sc.nextLine();
+		if (startOrExitGame.equals("1")) {
+			System.out.println("Игра началась!");
+		}
+		else {
+			System.exit(0);
+		}
+		
+		Player gamer = new Player(yourName);
+			
+		System.out.println("У вас на счету " + gamer.getMoneyOfPlayer() + " долларов.");
+		
+		Cities minsk = new Cities("Минск");
+		Home yourHome = new Home("Ваш дом");
+		
+		System.out.print("Вы находитесь: "); gamer.yourLocation(minsk, yourHome);
+
+		
+	}
+
+}

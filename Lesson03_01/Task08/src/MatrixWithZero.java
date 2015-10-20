@@ -5,7 +5,6 @@ public class MatrixWithZero {
 
 	public static void main(String[] args) {
 
-		
 		System.out.println("Введите размеры матрицы.");
 		Scanner sc1 = new Scanner(System.in);
 		System.out.println("Количество строк M: ");
@@ -15,6 +14,7 @@ public class MatrixWithZero {
 		System.out.println("Количество столбцов: N");
 		Integer n = sc2.nextInt();
 		
+		// выведем матрицу на экран
 		Integer[][] matrix = new Integer[m][n];
 		for (int i=0; i<m; i++) {
 			for (int j=0; j<n; j++) {
@@ -33,6 +33,8 @@ public class MatrixWithZero {
 		for (int i=0; i<m; i++) {
 			for (int j=0; j<n; j++) {
 				int sum = 0;
+				// проходим по каждому столбцу и строке
+				// если встречается 0, то susm= sum+1
 				for (int stolb=0; stolb<n; stolb++) {
 					if (matrix[i][stolb] == 0) {
 						sum = sum +1;
@@ -42,9 +44,11 @@ public class MatrixWithZero {
 						sum = sum +1;
 					}
 				}
+				// если sum=0 то ни одного нуля не встретилось - строка (столбец) остаётся прежним
 				if (sum == 0) {
 					newMatrix[i][j] = matrix[i][j];
 				}
+				// иначе все элементы строки (столбца) заменяются нулями
 				else {
 					newMatrix[i][j] = 0;
 				}
@@ -52,6 +56,7 @@ public class MatrixWithZero {
 			}
 		}
 		
+		// выведем новую матрицу на экран
 		System.out.println("Новая матрица:");
 		for (int i=0; i<m; i++) {
 			for (int j=0; j<n; j++) {

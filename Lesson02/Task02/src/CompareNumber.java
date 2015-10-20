@@ -6,7 +6,7 @@ public class CompareNumber {
 	public static void main(String[] args) {
 				
 		String firstNumber = "str1";
-		String secondNumber = "str1";
+		String secondNumber = "str2";
 				
 		// Проверяем, вводится ли склавиатуры число или строка и ссобщаем об ошибке.
 		// Предлагаем ввести строку ещё раз.
@@ -22,13 +22,11 @@ public class CompareNumber {
 			else {
 				System.out.println("Вы ввели не число. Повторите попытку.");
 			}
-			firstNumber = sc1.nextLine();
-			
-			
+			firstNumber = sc1.nextLine();			
 		} while( boo1 == false);
 		
-		boolean boo2 = false;
 		
+		boolean boo2 = false;
 		do {
 			Scanner sc2 = new Scanner(System.in);
 			sc2.useLocale(Locale.US);
@@ -39,9 +37,7 @@ public class CompareNumber {
 			else {
 				System.out.println("Вы ввели не число. Повторите попытку.");
 			}
-			secondNumber = sc2.nextLine();
-			
-			
+			secondNumber = sc2.nextLine();			
 		} while( boo2 == false);
 		
 		

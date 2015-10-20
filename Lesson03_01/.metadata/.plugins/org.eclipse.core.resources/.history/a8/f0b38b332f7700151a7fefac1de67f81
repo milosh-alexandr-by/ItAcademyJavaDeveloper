@@ -1,0 +1,52 @@
+
+import java.util.Scanner;
+
+public class CompressionString {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter tour text: ");
+		String text = sc.nextLine();
+
+		// должны получит строку
+		// использовать StringBuffer
+		
+//		int i = 0;
+		StringBuffer str = new StringBuffer("");
+//		while (i<5) {
+//		newStr.append("ha-");
+//		i = i+1;
+//		}
+//		System.out.println(newStr);
+		
+		int m = 1;
+		char[] arr = text.toCharArray();
+		for (int i=0; i<(arr.length-1); i++) {
+			// идём от нулевого элемента к предпоследнему
+			// если следующий элемент равен текущему, то m=m+1 и переходим к следующему
+			// и так до тех пор, пока следующий не будет равен текущему
+			// то есть мы запомним элемент и сколько раз подряд он встречается
+			if (arr[i] == arr[i+1]) {
+				m = m+1;
+				if (i == (arr.length-2)) {
+					str.append(arr[i]);str.append(m);
+				}
+				continue;				
+			}
+			str.append(arr[i]);str.append(m);
+			m = 1;
+		}
+		// когда доходим до последнего элемента, то не надо проверять следующие
+		// просто его выводим
+		if (m == 1) {
+			str.append(arr[arr.length-1]);str.append(m);
+		}
+		System.out.println(str);
+
+
+		
+	}
+
+}
+ // aaabccccaaa

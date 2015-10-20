@@ -9,13 +9,14 @@ public class SumOfNumbers {
 		System.out.print("Введите n: ");
 		Integer n= sc.nextInt();
 		sc.close();
+		
 		int sum = 0;
 		
 		for (int i=1; i<=n; i++) {
 			sum = sum + i;
 		}
 		
-		System.out.println("Сумма чисел от 1 до  " + n + " равна: " + sum + ".");
+		System.out.println("Сумма чисел от 1 до " + n + " равна: " + sum + ".");
 
 	}
 
