@@ -38,7 +38,7 @@ public class Bus {
 		return routeNumber;
 	}
 	
-	public String getBusBrand() {
+	public String getbusBrand() {
 		return busBrand;
 	}
 	
@@ -77,8 +77,8 @@ public class Bus {
 
 // метод, который выводит на экран поля класса для каждого конкретного автобуса	
 	public void avtobus() {
-		System.out.printf("%-15s%-15s%-15s%-15s%-15s%-15s%n", getDriverSurname(),
-				getBusNumber(), getRouteNumber(), getBusBrand(), getYearBeginUse(), getMileage());
+		System.out.printf("%-15s%-15s%-15s%-15s%-15s%-15s%n", driverSurname,
+				busNumber, routeNumber, busBrand, yearBeginUse, mileage);
 	}
 	
 // метод, который выводит на экран массив автобусов
@@ -132,7 +132,7 @@ public class Bus {
 	public static void thisYear(Bus[] massiv1) {
 		System.out.println();
 		System.out.println("Вывести список автобусов,которые эксплутируются больше заданного срока.");
-		System.out.print("Введите срок эксплуатации, лет: ");
+		System.out.print("Введите год ввода в эксплуатацию: ");
 		Scanner sc = new Scanner(System.in);
 		Integer y = sc.nextInt();
 		System.out.println();
@@ -145,7 +145,7 @@ public class Bus {
 		Bus[] arr = new Bus[10];
 		for (int i = 0; i < arr.length; i++) {
 			arr[i] = massiv1[i];
-			if ((2015-(arr[i].yearBeginUse)) >= yearOfBeginUse) {
+			if (arr[i].yearBeginUse < yearOfBeginUse) {
 				if (i < 9) {
 					System.out.print((i + 1) + "  | ");
 					arr[i].avtobus();
@@ -161,7 +161,7 @@ public class Bus {
 	public static void thisMileage(Bus[] massiv2) {
 		System.out.println();
 		System.out.println("Вывести список автобусов, пробег у которых больше заданного расстояния.");
-		System.out.print("Введите пробег, км: ");
+		System.out.print("Введите пробег: ");
 		Scanner sc = new Scanner(System.in);
 		Integer z = sc.nextInt();
 		System.out.println();

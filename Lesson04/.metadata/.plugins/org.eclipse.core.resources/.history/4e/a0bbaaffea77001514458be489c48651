@@ -1,19 +1,14 @@
-/*
- * Класс, в котором объявлются поля автобусов.
- * А также задаются методы, которые выполняют условия задачи.
- */
-
 import java.util.Scanner;
 
 // создадим класс Bus с полями: фамилия водитела, номер автобуса, номер маршрута, марка автобуса, год начала эксплуатации, пробег.
 public class Bus {
 
-	private String driverSurname;    // фамилия водитела
-	private int busNumber;           // номер автобуса
-	private int routeNumber;         // номер маршрута
-	private String busBrand;         // марка автобуса
-	private int yearBeginUse;        // год начала эксплуатации
-	private int mileage;             // пробег
+	String driverSurname;    // фамилия водитела
+	int busNumber;           // номер автобуса
+	int routeNumber;         // номер маршрута
+	String busBrand;         // марка автобуса
+	int yearBeginUse;        // год начала эксплуатации
+	int mileage;             // пробег
 
 // создадим конструктор с параметрами, которые соответсвуют полям
 	Bus(String driverSurname, int busNumber, int routeNumber, String busBrand,
@@ -25,60 +20,11 @@ public class Bus {
 		this.yearBeginUse = yearBeginUse;       // год начал эксплуатации
 		this.mileage = mileage;                 // пробег
 	}
-	
-	public String getDriverSurname() {
-		return driverSurname;
-	}
-		
-	public int getBusNumber() {
-		return busNumber; 
-	}
-	
-	public int getRouteNumber() {
-		return routeNumber;
-	}
-	
-	public String getBusBrand() {
-		return busBrand;
-	}
-	
-	public int getYearBeginUse() {
-		return yearBeginUse;
-	}
-	
-	public int getMileage() {
-		return mileage;
-	}
-	
-	public void setDriverSurname(String driverSurname) {
-		this.driverSurname = driverSurname;
-	}
-	
-	public void setBusNumber(int busNumber) {
-		this.busNumber = busNumber; 
-	}
-	
-	public void setRouteNumber(int routeNumber) {
-		this.routeNumber = routeNumber;
-	}
-	
-	public void setbusBrand(String busBrand) {
-		this.busBrand = busBrand;
-	}
-	
-	public void setYearBeginUse(int yearBeginUse) {
-		this.yearBeginUse = yearBeginUse;
-	}
-	
-	public void setMileage(int mileage) {
-		this.mileage = mileage;
-	}
-	
 
 // метод, который выводит на экран поля класса для каждого конкретного автобуса	
 	public void avtobus() {
-		System.out.printf("%-15s%-15s%-15s%-15s%-15s%-15s%n", getDriverSurname(),
-				getBusNumber(), getRouteNumber(), getBusBrand(), getYearBeginUse(), getMileage());
+		System.out.printf("%-15s%-15s%-15s%-15s%-15s%-15s%n", driverSurname,
+				busNumber, routeNumber, busBrand, yearBeginUse, mileage);
 	}
 	
 // метод, который выводит на экран массив автобусов
@@ -132,7 +78,7 @@ public class Bus {
 	public static void thisYear(Bus[] massiv1) {
 		System.out.println();
 		System.out.println("Вывести список автобусов,которые эксплутируются больше заданного срока.");
-		System.out.print("Введите срок эксплуатации, лет: ");
+		System.out.print("Введите год ввода в эксплуатацию: ");
 		Scanner sc = new Scanner(System.in);
 		Integer y = sc.nextInt();
 		System.out.println();
@@ -145,7 +91,7 @@ public class Bus {
 		Bus[] arr = new Bus[10];
 		for (int i = 0; i < arr.length; i++) {
 			arr[i] = massiv1[i];
-			if ((2015-(arr[i].yearBeginUse)) >= yearOfBeginUse) {
+			if (arr[i].yearBeginUse < yearOfBeginUse) {
 				if (i < 9) {
 					System.out.print((i + 1) + "  | ");
 					arr[i].avtobus();
@@ -158,14 +104,9 @@ public class Bus {
 	}
 
 // метод, который выводит на экран автобусы, соответсвующие выбранному пробегу	
-	public static void thisMileage(Bus[] massiv2) {
+	public static void thisMileage(int mileageOf1, Bus[] massiv2) {
 		System.out.println();
-		System.out.println("Вывести список автобусов, пробег у которых больше заданного расстояния.");
-		System.out.print("Введите пробег, км: ");
-		Scanner sc = new Scanner(System.in);
-		Integer z = sc.nextInt();
-		System.out.println();
-		int mileageOf = z;
+		int mileageOf = mileageOf1;
 		System.out.printf("%-2s%-15s%-15s%-15s%-15s%-15s%-15s%n", "№  | ",
 				"DriverSurname", "busNumber", "routeNumber", "busBrand",
 				"yearBeginUse", "mileage");

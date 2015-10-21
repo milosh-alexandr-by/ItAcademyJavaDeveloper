@@ -1,15 +1,11 @@
-/* 
- * В этом классе создаётся массив автобусов, используемых автобусным парком.
- * Массив выводится на экран.
- * На экран выводятся автобусы, которые мы ищем по условию задачи:
- *  - для заданного маршрута;
- *  - эксплутируются больше заданного срока.
- *  - пробег у которых больше заданного расстояния. * 
- */
+
 public class BusSorting {
 
-	public static void main(String[] args) {
 	
+
+	public static void main(String[] args) {
+		
+
 		// создадим массив автобусов
 		Bus[] arr = new Bus[10];
 		arr[0] = new Bus("Ivanov", 1251, 77, "Ikarus", 1995, 50000);
@@ -25,12 +21,21 @@ public class BusSorting {
 		
 		Bus.matrixOfBus(arr);
 		
+
 		Bus.thisRoute(arr);
+
 
 		Bus.thisYear(arr);
 
+
 		Bus.thisMileage(arr);
-			
+		
+		
+	
 	}
+	
+
+	
+
 }
 
