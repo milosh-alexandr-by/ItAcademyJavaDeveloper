@@ -1,0 +1,36 @@
+package car;
+
+import java.util.ArrayList;
+
+import passengerCar.Sedan;
+
+public class TaxiStation {
+	
+	public static void main(String[] args) {
+		
+		ArrayList<Car> carList = new ArrayList<>();
+		carList = buildTaxiStation();
+		
+		// Вывести на экран таксопарк с помощью for each.		
+	for (Car ob : carList) {
+		System.out.println(ob);
+	}
+		
+	}
+	
+	static ArrayList<Sedan> sedanList = new ArrayList<>();
+	
+	public static ArrayList<Car> buildTaxiStation() {
+		ArrayList<Car> arr = new ArrayList<>();
+		addCarsToCarList();
+		arr.addAll(sedanList);
+		return arr;
+	}
+	
+	public static void addCarsToCarList() {
+		sedanList.add(new Sedan("Toyota", "Camry", 8.5, 20000, 170));
+		
+	}
+	
+
+}

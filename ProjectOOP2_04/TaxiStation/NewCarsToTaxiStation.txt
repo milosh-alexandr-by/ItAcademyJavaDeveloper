@@ -1,0 +1,2 @@
+Audi, A6, 8.8, 25000, 198, Sedan
+Subaru, Forester, 9.5, 19500, 160, SUV

@@ -5,7 +5,7 @@
  * Находит автомобиль, который соответсвует заданному диапазону параметров скорости.
  */
 import java.util.*;
-import java.util.Scanner;
+
 
 public class TaxiStation {
 

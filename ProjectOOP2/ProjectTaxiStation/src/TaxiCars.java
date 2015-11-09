@@ -40,16 +40,12 @@ public class TaxiCars extends PassengerCar {
 	
 // метод для сортровоки по расходу топлива
 	public static void SortedByFuelConsumption(ArrayList<TaxiCars> arr) {
-		Collections.sort(arr, 
-				
+		Collections.sort(arr, 				
 				new Comparator<TaxiCars>() {			
-
 				@Override
 				public int compare(TaxiCars obj1, TaxiCars obj2) {
-					
 					double fc1 = obj1.getFuelConsumption();
 					double fc2 = obj2.getFuelConsumption();
-					
 					if (fc1>fc2) {
 						return 1;
 					}
@@ -59,12 +55,9 @@ public class TaxiCars extends PassengerCar {
 					else {
 						return 0;
 					}
-					
 				}
-
 				}	
-					
-			);	
+		);	
 	}
 	
 // метод, который подсичтывает стоимость таксопарка

@@ -1,0 +1,111 @@
+/*
+ *  ласс дл€ шаблона, по которому будут создаватсь€ экземпл€ры класса (автомобили).
+ * “акже переопределЄн метод toString, дл€ вывода автомобил€ и его зарактеристик на экран
+ */
+
+package car;
+
+public class Car {
+
+	private String brand;			// марка автомобил€
+	private String model;			// модель автомобил€
+	private double fuelConsumption;	// расход топлива
+	private int price;				// цена
+	private int maxSpeed; 			// максимальна€ скорость
+	
+	public int numberLineSeats;  // количество р€дов сидений
+	public int maxNumberLineSeats;  // максимальное количество р€дов сидений
+	public int minNumberLineSeats;  // минимальное количество р€дов сидений
+	public int numberDoors;  // количество р€дов дверей
+	
+	// булевска€ переменна€ roof, котора€ раздел€ет на машины с крышей и без крыши
+	public boolean roof;	// крыша
+	public void hasRoof(boolean hasRoof){
+		if (hasRoof==true) {
+			System.out.println("ћашина с жЄсткой крышей.");
+		}
+		else {
+			System.out.println("ћашина с раздвигающейс€ крышей.");
+		}
+	}
+	
+	
+	
+	public String getBrand() {
+		return brand;
+	}
+
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+
+	public String getModel() {
+		return model;
+	}
+
+
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+
+	public double getFuelConsumption() {
+		return fuelConsumption;
+	}
+
+
+	public void setFuelConsumption(double fuelConsumption) {
+		try {
+			if (fuelConsumption<0) {
+				throw new Exception("–асход топлива не может быть отрицательным.");
+			}
+			this.fuelConsumption = fuelConsumption;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+
+	public int getPrice() {
+		return price;
+	}
+
+
+	public void setPrice(int price) {
+		try {
+			if (fuelConsumption<0) {
+				throw new Exception("÷ена не может быть отрицательной.");
+			}
+			this.price = price;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+
+	public int getMaxSpeed() {
+		return maxSpeed;
+	}
+
+
+	public void setMaxSpeed(int maxSpeed) {
+		try {
+			if (fuelConsumption<0) {
+				throw new Exception("ћаксимальна€ скорость не может быть отрицательной.");
+			}
+			this.maxSpeed = maxSpeed;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	// переопределение метода toString дл€ объектов класса Car
+	public String toString() {
+		String str = getBrand() + ", " + getModel() + ", " +  getFuelConsumption() + ", " +  getPrice() + ", " + getMaxSpeed();
+		return str;
+	}
+	
+}

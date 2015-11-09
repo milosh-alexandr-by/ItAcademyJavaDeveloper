@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="passengerCar.Sedan"/>
+<fullyQualifiedTypeName name="passengerCar.Coupe"/>
+<fullyQualifiedTypeName name="passengerCar.Universal"/>
+<fullyQualifiedTypeName name="openCar.Roadster"/>
+<fullyQualifiedTypeName name="van.Minibus"/>
+<fullyQualifiedTypeName name="mpv.Furgon"/>
+<fullyQualifiedTypeName name="passengerCar.Hearse"/>
+<fullyQualifiedTypeName name="mpv.Pickup"/>
+<fullyQualifiedTypeName name="openCar.Cabriolet"/>
+<fullyQualifiedTypeName name="openCar.Targa"/>
+<fullyQualifiedTypeName name="passengerCar.Hatchback"/>
+<fullyQualifiedTypeName name="passengerCar.Limousine"/>
+<fullyQualifiedTypeName name="passengerCar.SUV"/>
+<fullyQualifiedTypeName name="van.Minivan"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+</qualifiedTypeNameHistroy>
