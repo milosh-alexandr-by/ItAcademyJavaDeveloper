@@ -15,10 +15,9 @@ class MyThread extends Thread {
 	Main MN;
 	Semaphore sem;
 	
-	public MyThread(Semaphore s, String name, Main mn){
+	public MyThread(String name, Main mn){
 		this.name = name;
 		MN = mn;
-		sem = s;
 		start();
 	}
 	
@@ -35,10 +34,10 @@ public class TT {
 	public static void main(String[] args) {
 		
        
-		Semaphore sem = new Semaphore(1);
+
 		Main MN = new Main();
-		new MyThread(sem, "One", MN);
-		new MyThread(sem, "Two", MN);
+		new MyThread("One", MN);
+		new MyThread("Two", MN);
 		
 
 

@@ -7,13 +7,13 @@ public class Van extends CloseCar {
 
 	public final boolean trunk = false;
 	
-	public boolean leftSecondDoor;	  // наличие второй двери слева
+	public boolean leftSecondDoor;	  // РЅР°Р»РёС‡РёРµ РІС‚РѕСЂРѕР№ РґРІРµСЂРё СЃР»РµРІР°
 	public void hasLeftSecondDoor(boolean hasLeftSecondDoor){
 		if (hasLeftSecondDoor==true) {
-			System.out.println("Слева есть вторая дверь.");
+			System.out.println("РЎР»РµРІР° РµСЃС‚СЊ РІС‚РѕСЂР°СЏ РґРІРµСЂСЊ.");
 		}
 		else {
-			System.out.println("Слева нет второй двери.");
+			System.out.println("РЎР»РµРІР° РЅРµС‚ РІС‚РѕСЂРѕР№ РґРІРµСЂРё.");
 		}
 	}
 	

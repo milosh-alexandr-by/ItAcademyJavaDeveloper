@@ -3,7 +3,7 @@ package van;
 public class Minivan extends Van  {
 
 	public final boolean leftSecondDoor = true;
-	public int numberLineSeats = 3;  // количество рядов сидений
+	public int numberLineSeats = 3;  // РєРѕР»РёС‡РµСЃС‚РІРѕ СЂСЏРґРѕРІ СЃРёРґРµРЅРёР№
 	public final int maxNumberLineSeats = 4;
 	
 	public Minivan(String brand, String model, double fuelConsumption, int price, int maxSpeed){

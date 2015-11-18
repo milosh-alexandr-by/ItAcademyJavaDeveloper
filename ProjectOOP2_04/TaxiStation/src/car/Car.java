@@ -1,31 +1,31 @@
 /*
- * Класс для шаблона, по которому будут создаватсья экземпляры класса (автомобили).
- * Также переопределён метод toString, для вывода автомобиля и его зарактеристик на экран
+ * РљР»Р°СЃСЃ РґР»СЏ С€Р°Р±Р»РѕРЅР°, РїРѕ РєРѕС‚РѕСЂРѕРјСѓ Р±СѓРґСѓС‚ СЃРѕР·РґР°РІР°С‚СЃСЊСЏ СЌРєР·РµРјРїР»СЏСЂС‹ РєР»Р°СЃСЃР° (Р°РІС‚РѕРјРѕР±РёР»Рё).
+ * РўР°РєР¶Рµ РїРµСЂРµРѕРїСЂРµРґРµР»С‘РЅ РјРµС‚РѕРґ toString, РґР»СЏ РІС‹РІРѕРґР° Р°РІС‚РѕРјРѕР±РёР»СЏ Рё РµРіРѕ Р·Р°СЂР°РєС‚РµСЂРёСЃС‚РёРє РЅР° СЌРєСЂР°РЅ
  */
 
 package car;
 
 public class Car {
 
-	private String brand;			// марка автомобиля
-	private String model;			// модель автомобиля
-	private double fuelConsumption;	// расход топлива
-	private int price;				// цена
-	private int maxSpeed; 			// максимальная скорость
+	private String brand;			// РјР°СЂРєР° Р°РІС‚РѕРјРѕР±РёР»СЏ
+	private String model;			// РјРѕРґРµР»СЊ Р°РІС‚РѕРјРѕР±РёР»СЏ
+	private double fuelConsumption;	// СЂР°СЃС…РѕРґ С‚РѕРїР»РёРІР°
+	private int price;				// С†РµРЅР°
+	private int maxSpeed; 			// РјР°РєСЃРёРјР°Р»СЊРЅР°СЏ СЃРєРѕСЂРѕСЃС‚СЊ
 	
-	public int numberLineSeats;  // количество рядов сидений
-	public int maxNumberLineSeats;  // максимальное количество рядов сидений
-	public int minNumberLineSeats;  // минимальное количество рядов сидений
-	public int numberDoors;  // количество рядов дверей
+	public int numberLineSeats;  // РєРѕР»РёС‡РµСЃС‚РІРѕ СЂСЏРґРѕРІ СЃРёРґРµРЅРёР№
+	public int maxNumberLineSeats;  // РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЂСЏРґРѕРІ СЃРёРґРµРЅРёР№
+	public int minNumberLineSeats;  // РјРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЂСЏРґРѕРІ СЃРёРґРµРЅРёР№
+	public int numberDoors;  // РєРѕР»РёС‡РµСЃС‚РІРѕ СЂСЏРґРѕРІ РґРІРµСЂРµР№
 	
-	// булевская переменная roof, которая разделяет на машины с крышей и без крыши
-	public boolean roof;	// крыша
+	// Р±СѓР»РµРІСЃРєР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ roof, РєРѕС‚РѕСЂР°СЏ СЂР°Р·РґРµР»СЏРµС‚ РЅР° РјР°С€РёРЅС‹ СЃ РєСЂС‹С€РµР№ Рё Р±РµР· РєСЂС‹С€Рё
+	public boolean roof;	// РєСЂС‹С€Р°
 	public void hasRoof(boolean hasRoof){
 		if (hasRoof==true) {
-			System.out.println("Машина с жёсткой крышей.");
+			System.out.println("РњР°С€РёРЅР° СЃ Р¶С‘СЃС‚РєРѕР№ РєСЂС‹С€РµР№.");
 		}
 		else {
-			System.out.println("Машина с раздвигающейся крышей.");
+			System.out.println("РњР°С€РёРЅР° СЃ СЂР°Р·РґРІРёРіР°СЋС‰РµР№СЃСЏ РєСЂС‹С€РµР№.");
 		}
 	}
 	
@@ -59,7 +59,7 @@ public class Car {
 	public void setFuelConsumption(double fuelConsumption) {
 		try {
 			if (fuelConsumption<0) {
-				throw new Exception("Расход топлива не может быть отрицательным.");
+				throw new Exception("Р Р°СЃС…РѕРґ С‚РѕРїР»РёРІР° РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹Рј.");
 			}
 			this.fuelConsumption = fuelConsumption;
 		} catch (Exception e) {
@@ -77,7 +77,7 @@ public class Car {
 	public void setPrice(int price) {
 		try {
 			if (fuelConsumption<0) {
-				throw new Exception("Цена не может быть отрицательной.");
+				throw new Exception("Р¦РµРЅР° РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕР№.");
 			}
 			this.price = price;
 		} catch (Exception e) {
@@ -94,7 +94,7 @@ public class Car {
 	public void setMaxSpeed(int maxSpeed) {
 		try {
 			if (fuelConsumption<0) {
-				throw new Exception("Максимальная скорость не может быть отрицательной.");
+				throw new Exception("РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ СЃРєРѕСЂРѕСЃС‚СЊ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕР№.");
 			}
 			this.maxSpeed = maxSpeed;
 		} catch (Exception e) {
@@ -102,7 +102,7 @@ public class Car {
 		}
 	}
 	
-	// переопределение метода toString для объектов класса Car
+	// РїРµСЂРµРѕРїСЂРµРґРµР»РµРЅРёРµ РјРµС‚РѕРґР° toString РґР»СЏ РѕР±СЉРµРєС‚РѕРІ РєР»Р°СЃСЃР° Car
 	public String toString() {
 		String str = getBrand() + ", " + getModel() + ", " +  getFuelConsumption() + ", " +  getPrice() + ", " + getMaxSpeed();
 		return str;

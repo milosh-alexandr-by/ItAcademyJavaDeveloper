@@ -4,41 +4,38 @@ import closeCar.CloseCar;
 
 public class PassengerCar extends CloseCar {
 	
-	public final boolean trunk = true;   // есть багажник
-	public final boolean railDoor = false;  // нет двери на рельсах
+	public final boolean trunk = true;   // РµСЃС‚СЊ Р±Р°РіР°Р¶РЅРёРє
+	public final boolean railDoor = false;  // РЅРµС‚ РґРІРµСЂРё РЅР° СЂРµР»СЊСЃР°С…
 	
-	// определяем как открывается багажник
+	// РѕРїСЂРµРґРµР»СЏРµРј РєР°Рє РѕС‚РєСЂС‹РІР°РµС‚СЃСЏ Р±Р°РіР°Р¶РЅРёРє
 	String typeOfTrunk;
 	public void typeOfTrunk(String typeOfTrunk) {
 		switch (typeOfTrunk) {
-		case "sedan": System.out.println("Открывается только крышка багажника.");
-		case "universal": System.out.println("Открывается багажник со стеклом.");
-		case "hatchback": System.out.println("Открывается укороченный багажник со стеклом, ");
-		case "bigsuv": System.out.println("Дверь багажника открывается в сторону, а не вверх");
+		case "sedan": System.out.println("РћС‚РєСЂС‹РІР°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ РєСЂС‹С€РєР° Р±Р°РіР°Р¶РЅРёРєР°.");
+		case "universal": System.out.println("РћС‚РєСЂС‹РІР°РµС‚СЃСЏ Р±Р°РіР°Р¶РЅРёРє СЃРѕ СЃС‚РµРєР»РѕРј.");
+		case "hatchback": System.out.println("РћС‚РєСЂС‹РІР°РµС‚СЃСЏ СѓРєРѕСЂРѕС‡РµРЅРЅС‹Р№ Р±Р°РіР°Р¶РЅРёРє СЃРѕ СЃС‚РµРєР»РѕРј.");
+		case "bigsuv": System.out.println("Р”РІРµСЂСЊ Р±Р°РіР°Р¶РЅРёРєР° РѕС‚РєСЂС‹РІР°РµС‚СЃСЏ РІ СЃС‚РѕСЂРѕРЅСѓ, Р° РЅРµ РІРІРµСЂС….");
 		}
 	}
 	
-	// если bodySUV=true, то это внедорожник, которому соответсвует увеличенный клиренс и увеличенный объём салона
-	public boolean bodySUV;	  // кузов внедоржника
+	// РµСЃР»Рё bodySUV=true, С‚Рѕ СЌС‚Рѕ РІРЅРµРґРѕСЂРѕР¶РЅРёРє, РєРѕС‚РѕСЂРѕРјСѓ СЃРѕРѕС‚РІРµС‚СЃРІСѓРµС‚ СѓРІРµР»РёС‡РµРЅРЅС‹Р№ РєР»РёСЂРµРЅСЃ Рё СѓРІРµР»РёС‡РµРЅРЅС‹Р№ РѕР±СЉС‘Рј СЃР°Р»РѕРЅР°
+	public boolean bodySUV;	  // РєСѓР·РѕРІ РІРЅРµРґРѕСЂР¶РЅРёРєР°
 	public void hasBodySUV(boolean hasBodySUV){
 		if (hasBodySUV==true) {
-			System.out.println("Увеличенный клиренс. Увеличенный объём салона.");
+			System.out.println("РЈРІРµР»РёС‡РµРЅРЅС‹Р№ РєР»РёСЂРµРЅСЃ. РЈРІРµР»РёС‡РµРЅРЅС‹Р№ РѕР±СЉС‘Рј СЃР°Р»РѕРЅР°.");
 		}
 		else {
-			System.out.println("Легковая машина.");
+			System.out.println("Р›РµРіРєРѕРІР°СЏ РјР°С€РёРЅР°.");
 		}
 	}
 	
-	// если increasedRearSeat=true то место для задних пассажиров увеличено, например для лимузина
-	public boolean increasedRearSeat;	  // увеличенное место для задних пассажиров
+	// РµСЃР»Рё increasedRearSeat=true С‚Рѕ РјРµСЃС‚Рѕ РґР»СЏ Р·Р°РґРЅРёС… РїР°СЃСЃР°Р¶РёСЂРѕРІ СѓРІРµР»РёС‡РµРЅРѕ, РЅР°РїСЂРёРјРµСЂ РґР»СЏ Р»РёРјСѓР·РёРЅР°
+	public boolean increasedRearSeat;	  // СѓРІРµР»РёС‡РµРЅРЅРѕРµ РјРµСЃС‚Рѕ РґР»СЏ Р·Р°РґРЅРёС… РїР°СЃСЃР°Р¶РёСЂРѕРІ
 	public void hasIncreasedRearSeat(boolean hasIncreasedRearSeat){
 		if (hasIncreasedRearSeat==true) {
-			System.out.println("Место для задних пассажиров увеличено. Можно расположить диваны вдоль салона. ");
+			System.out.println("РњРµСЃС‚Рѕ РґР»СЏ Р·Р°РґРЅРёС… РїР°СЃСЃР°Р¶РёСЂРѕРІ СѓРІРµР»РёС‡РµРЅРѕ. РњРѕР¶РЅРѕ СЂР°СЃРїРѕР»РѕР¶РёС‚СЊ РґРёРІР°РЅС‹ РІРґРѕР»СЊ СЃР°Р»РѕРЅР°. ");
 		}
 
 	}
-
-
-	
 
 }

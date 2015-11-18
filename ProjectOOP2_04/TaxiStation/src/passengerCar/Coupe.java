@@ -3,9 +3,9 @@ package passengerCar;
 
 public class Coupe extends PassengerCar {
 
-	// один ряд сидений
+	// РѕРґРёРЅ СЂСЏРґ СЃРёРґРµРЅРёР№
 	public final int numberLineSeats = 1;
-	// один ряд дверей
+	// РѕРґРёРЅ СЂСЏРґ РґРІРµСЂРµР№
 	public final int numberDoors = 1;
 
 	public Coupe(String brand, String model, double fuelConsumption, int price, int maxSpeed){

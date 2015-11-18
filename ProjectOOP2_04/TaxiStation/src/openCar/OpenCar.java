@@ -4,10 +4,10 @@ import car.Car;
 
 public abstract class OpenCar extends Car {
 
-	// если roof = true то машина с крышей
+	// РµСЃР»Рё roof = true С‚Рѕ РјР°С€РёРЅР° СЃ РєСЂС‹С€РµР№
 	public boolean roof = false;
 	
-	// булевская переменная safetyArc, которая определяет есть ли защитная дуга 
+	// Р±СѓР»РµРІСЃРєР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ safetyArc, РєРѕС‚РѕСЂР°СЏ РѕРїСЂРµРґРµР»СЏРµС‚ РµСЃС‚СЊ Р»Рё Р·Р°С‰РёС‚РЅР°СЏ РґСѓРіР°
 	public boolean safetyArc;
 	
 }

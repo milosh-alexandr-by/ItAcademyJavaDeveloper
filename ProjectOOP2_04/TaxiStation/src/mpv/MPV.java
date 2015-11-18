@@ -7,13 +7,13 @@ public abstract class MPV extends CloseCar {
 
 	public final boolean truckBody = true;
 
-	public boolean openTruckBody;	  // открытытый грузовой кузов
+	public boolean openTruckBody;	  // РѕС‚РєСЂС‹С‚С‹С‚С‹Р№ РіСЂСѓР·РѕРІРѕР№ РєСѓР·РѕРІ
 	public void hasOpenTruckBody(boolean hasOpenTruckBody){
 		if (hasOpenTruckBody==true) {
-			System.out.println("У машины открытый грузовой кузов.");
+			System.out.println("РЈ РјР°С€РёРЅС‹ РѕС‚РєСЂС‹С‚С‹Р№ РіСЂСѓР·РѕРІРѕР№ РєСѓР·РѕРІ.");
 		}
 		else {
-			System.out.println("У закрытый грузовой кузов.");
+			System.out.println("РЈ РјР°С€РёРЅС‹ Р·Р°РєСЂС‹С‚С‹Р№ РіСЂСѓР·РѕРІРѕР№ РєСѓР·РѕРІ.");
 		}
 	}
 

@@ -1,14 +1,14 @@
 /*
- * Класс, в котором создаём списки автомобилей, согласно классификации.
- * Затем создаём таксопарк из всех списковв.
- * Затем создаём объекты (автомобили) и загоняем их в таксопарк:
- *  - вручную;
- *  - из файла на компьютере.
- *  Создаём метод, для создания .txt файла со списком автомобилей таксопарка.
- *  Выводим таксопарк на экран.
- *  Рассчитываем стоимость таксопарка.
- *  Сортируем таксопарк по цене и расходу топлива.
- *  Находим автомобили, которые соответсвуют заданному диапазону максимальной скорости. 
+ * РљР»Р°СЃСЃ, РІ РєРѕС‚РѕСЂРѕРј СЃРѕР·РґР°С‘Рј СЃРїРёСЃРєРё Р°РІС‚РѕРјРѕР±РёР»РµР№, СЃРѕРіР»Р°СЃРЅРѕ РєР»Р°СЃСЃРёС„РёРєР°С†РёРё.
+ * Р—Р°С‚РµРј СЃРѕР·РґР°С‘Рј С‚Р°РєСЃРѕРїР°СЂРє РёР· РІСЃРµС… СЃРїРёСЃРєРѕРІРІ.
+ * Р—Р°С‚РµРј СЃРѕР·РґР°С‘Рј РѕР±СЉРµРєС‚С‹ (Р°РІС‚РѕРјРѕР±РёР»Рё) Рё Р·Р°РіРѕРЅСЏРµРј РёС… РІ С‚Р°РєСЃРѕРїР°СЂРє:
+ *  - РІСЂСѓС‡РЅСѓСЋ;
+ *  - РёР· С„Р°Р№Р»Р° РЅР° РєРѕРјРїСЊСЋС‚РµСЂРµ.
+ *  РЎРѕР·РґР°С‘Рј РјРµС‚РѕРґ, РґР»СЏ СЃРѕР·РґР°РЅРёСЏ .txt С„Р°Р№Р»Р° СЃРѕ СЃРїРёСЃРєРѕРј Р°РІС‚РѕРјРѕР±РёР»РµР№ С‚Р°РєСЃРѕРїР°СЂРєР°.
+ *  Р’С‹РІРѕРґРёРј С‚Р°РєСЃРѕРїР°СЂРє РЅР° СЌРєСЂР°РЅ.
+ *  Р Р°СЃСЃС‡РёС‚С‹РІР°РµРј СЃС‚РѕРёРјРѕСЃС‚СЊ С‚Р°РєСЃРѕРїР°СЂРєР°.
+ *  РЎРѕСЂС‚РёСЂСѓРµРј С‚Р°РєСЃРѕРїР°СЂРє РїРѕ С†РµРЅРµ Рё СЂР°СЃС…РѕРґСѓ С‚РѕРїР»РёРІР°.
+ *  РќР°С…РѕРґРёРј Р°РІС‚РѕРјРѕР±РёР»Рё, РєРѕС‚РѕСЂС‹Рµ СЃРѕРѕС‚РІРµС‚СЃРІСѓСЋС‚ Р·Р°РґР°РЅРЅРѕРјСѓ РґРёР°РїР°Р·РѕРЅСѓ РјР°РєСЃРёРјР°Р»СЊРЅРѕР№ СЃРєРѕСЂРѕСЃС‚Рё. 
  */
 
 package car;
@@ -19,12 +19,17 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
+import java.util.Locale;
+import java.util.ResourceBundle;
 import java.util.Scanner;
+
+import javax.swing.text.NumberFormatter;
 
 import mpv.Furgon;
 import mpv.Pickup;
@@ -45,45 +50,59 @@ public class TaxiStation {
 
 	public static void main(String[] args) throws IOException {
 
-		// Создаём список автомобилей таксопарка.
+		Scanner sc = new Scanner(System.in);		
+		System.out.println("Р’С‹Р±РµСЂРёС‚Рµ СЏР·С‹Рє:");
+		System.out.println("1. Р СѓСЃСЃРєРёР№.");
+		System.out.println("2. English.");
+		int i = sc.nextInt();
+		Locale loc = null;
+		switch(i){
+			case 1: loc = new Locale("ru", "RU"); break;
+			case 2: loc = new Locale("en", "US"); break;
+		}	
+		ResourceBundle rb = ResourceBundle.getBundle("car/lang", loc);
+		
+		
+		
+		// РЎРѕР·РґР°С‘Рј СЃРїРёСЃРѕРє Р°РІС‚РѕРјРѕР±РёР»РµР№ С‚Р°РєСЃРѕРїР°СЂРєР°.
 		ArrayList<Car> carList = new ArrayList<>();
 		carList = buildTaxiStation();
 
-		// Создаём .txt файл со списком автомобилей.
+		// РЎРѕР·РґР°С‘Рј .txt С„Р°Р№Р» СЃРѕ СЃРїРёСЃРєРѕРј Р°РІС‚РѕРјРѕР±РёР»РµР№.
 //		createNewTxtFile("TaxiStation.txt", carList);
 
-		// Вывести на экран стоимость таксопарка.
+		// Р’С‹РІРµСЃС‚Рё РЅР° СЌРєСЂР°РЅ СЃС‚РѕРёРјРѕСЃС‚СЊ С‚Р°РєСЃРѕРїР°СЂРєР°.
 		costOfTaxiStation(carList);
 
-		// Вывести на экран таксопарк с помощью for each.
+		// Р’С‹РІРµСЃС‚Рё РЅР° СЌРєСЂР°РЅ С‚Р°РєСЃРѕРїР°СЂРє СЃ РїРѕРјРѕС‰СЊСЋ for each.
 		for (Car ob : carList) {
 			System.out.println(ob);
 		}
 
-		// Сортировка по расходу топлива.
+		// РЎРѕСЂС‚РёСЂРѕРІРєР° РїРѕ СЂР°СЃС…РѕРґСѓ С‚РѕРїР»РёРІР°.
 		sortedByFuelConsumption(carList);
-		// Выводим на экран таксопарк, отсортированный по расходу топлива.
+		// Р’С‹РІРѕРґРёРј РЅР° СЌРєСЂР°РЅ С‚Р°РєСЃРѕРїР°СЂРє, РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹Р№ РїРѕ СЂР°СЃС…РѕРґСѓ С‚РѕРїР»РёРІР°.
 		printTaxiStation(carList);
-		// Создаём .txt файл со списком автомобилей, отсортированных по расходу
-		// топлива.
+		// РЎРѕР·РґР°С‘Рј .txt С„Р°Р№Р» СЃРѕ СЃРїРёСЃРєРѕРј Р°РІС‚РѕРјРѕР±РёР»РµР№, РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹С… РїРѕ СЂР°СЃС…РѕРґСѓ
+		// С‚РѕРїР»РёРІР°.
 //		createNewTxtFile("SortedByFuelConsumption.txt", carList);
 
-		// Сортировка по цене.
+		// РЎРѕСЂС‚РёСЂРѕРІРєР° РїРѕ С†РµРЅРµ.
 		Collections.sort(carList, new SortedByPrice());
-		// Выводим на экран таксопарк, отсортированный по цене.
+		// Р’С‹РІРѕРґРёРј РЅР° СЌРєСЂР°РЅ С‚Р°РєСЃРѕРїР°СЂРє, РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹Р№ РїРѕ С†РµРЅРµ.
 		System.out.println();
-		System.out.print("Сортировка по цене:");
+		System.out.print(rb.getString("sortPrice"));
 		printTaxiStation(carList);
-		// Создаём .txt файл со списком автомобилей, отсортированных по цене.
+		// РЎРѕР·РґР°С‘Рј .txt С„Р°Р№Р» СЃРѕ СЃРїРёСЃРєРѕРј Р°РІС‚РѕРјРѕР±РёР»РµР№, РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹С… РїРѕ С†РµРЅРµ.
 //		createNewTxtFile("SortedByPrice.txt", carList);
 
-		// Находит автомобиль, который соответсвует заданному диапазону
-		// параметров скорости.
+		// РќР°С…РѕРґРёС‚ Р°РІС‚РѕРјРѕР±РёР»СЊ, РєРѕС‚РѕСЂС‹Р№ СЃРѕРѕС‚РІРµС‚СЃРІСѓРµС‚ Р·Р°РґР°РЅРЅРѕРјСѓ РґРёР°РїР°Р·РѕРЅСѓ
+		// РїР°СЂР°РјРµС‚СЂРѕРІ СЃРєРѕСЂРѕСЃС‚Рё.
 //		speedDiapazon(carList);
 
 	}
-
-	// создадим списки, в которых будем хранить все виды машин
+	
+	// СЃРѕР·РґР°РґРёРј СЃРїРёСЃРєРё, РІ РєРѕС‚РѕСЂС‹С… Р±СѓРґРµРј С…СЂР°РЅРёС‚СЊ РІСЃРµ РІРёРґС‹ РјР°С€РёРЅ
 	static ArrayList<Furgon> furgonList = new ArrayList<>();
 	static ArrayList<Hearse> hearseList = new ArrayList<>();
 	static ArrayList<Pickup> pickupList = new ArrayList<>();
@@ -99,11 +118,12 @@ public class TaxiStation {
 	static ArrayList<Minibus> minibusList = new ArrayList<>();
 	static ArrayList<Minivan> minivanList = new ArrayList<>();
 
-	// метод, для создания списка автомобилей таксопарка
+	// РјРµС‚РѕРґ, РґР»СЏ СЃРѕР·РґР°РЅРёСЏ СЃРїРёСЃРєР° Р°РІС‚РѕРјРѕР±РёР»РµР№ С‚Р°РєСЃРѕРїР°СЂРєР°
 	public static ArrayList<Car> buildTaxiStation() {
 		ArrayList<Car> arr = new ArrayList<>();
 		addCarsToCarList();
 //		addCarsToCarList("NewCarsToTaxiStation.txt");
+		addCarsToCarList("NewCarsToTaxiStation2.txt");
 		arr.addAll(furgonList);
 		arr.addAll(hearseList);
 		arr.addAll(pickupList);
@@ -121,7 +141,7 @@ public class TaxiStation {
 		return arr;
 	}
 
-	// метод, для добавления автомобилей вручную
+	// РјРµС‚РѕРґ, РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ Р°РІС‚РѕРјРѕР±РёР»РµР№ РІСЂСѓС‡РЅСѓСЋ
 	public static void addCarsToCarList() {
 		sedanList.add(new Sedan("Toyota", "Camry", 8.5, 20000, 170));
 		sedanList.add(new Sedan("VW", "Passat B6", 8.1, 11000, 150));
@@ -133,7 +153,7 @@ public class TaxiStation {
 
 	}
 
-	// метод, который добавляет автомобили из файла
+	// РјРµС‚РѕРґ, РєРѕС‚РѕСЂС‹Р№ РґРѕР±Р°РІР»СЏРµС‚ Р°РІС‚РѕРјРѕР±РёР»Рё РёР· С„Р°Р№Р»Р°
 	public static void addCarsToCarList(String fileOnComputer) {
 		System.out.println();
 		File newCarsToTaxiStation = new File(fileOnComputer);
@@ -215,8 +235,8 @@ public class TaxiStation {
 		}
 	}
 
-	// метод, который создаёт .txt файл, с нужным для нас расположением
-	// автомобилей
+	// РјРµС‚РѕРґ, РєРѕС‚РѕСЂС‹Р№ СЃРѕР·РґР°С‘С‚ .txt С„Р°Р№Р», СЃ РЅСѓР¶РЅС‹Рј РґР»СЏ РЅР°СЃ СЂР°СЃРїРѕР»РѕР¶РµРЅРёРµРј
+	// Р°РІС‚РѕРјРѕР±РёР»РµР№
 	public static void createNewTxtFile(String nameOfFile,
 			ArrayList<? extends Car> carList) throws IOException {
 		int size = carList.size();
@@ -233,21 +253,22 @@ public class TaxiStation {
 		tsw.close();
 	}
 
-	// метод, который подсичтывает стоимость таксопарка
+	// РјРµС‚РѕРґ, РєРѕС‚РѕСЂС‹Р№ РїРѕРґСЃРёС‡С‚С‹РІР°РµС‚ СЃС‚РѕРёРјРѕСЃС‚СЊ С‚Р°РєСЃРѕРїР°СЂРєР°
 	public static void costOfTaxiStation(Collection<Car> arr) {
+		NumberFormat nF = NumberFormat.getNumberInstance();
 		int priceOfTaxiStation = 0;
 		Iterator<Car> itr = arr.iterator();
 		while (itr.hasNext()) {
 			priceOfTaxiStation += itr.next().getPrice();
 		}
-		System.out.println("Стоимость автопарка: " + priceOfTaxiStation
-				+ " долларов.\n");
+		System.out.println("stationCost" + nF.format(priceOfTaxiStation)
+				+ " РґРѕР»Р»Р°СЂРѕРІ.\n");
 	}
 
-	// метод для сортровоки по расходу топлива
+	// РјРµС‚РѕРґ РґР»СЏ СЃРѕСЂС‚СЂРѕРІРѕРєРё РїРѕ СЂР°СЃС…РѕРґСѓ С‚РѕРїР»РёРІР°
 	public static void sortedByFuelConsumption(ArrayList<? extends Car> arr) {
 		System.out.println();
-		System.out.print("Сортировка по расходу топлива:");
+		System.out.print("РЎРѕСЂС‚РёСЂРѕРІРєР° РїРѕ СЂР°СЃС…РѕРґСѓ С‚РѕРїР»РёРІР°:");
 		Collections.sort(arr, new Comparator<Car>() {
 			@Override
 			public int compare(Car obj1, Car obj2) {
@@ -264,7 +285,7 @@ public class TaxiStation {
 		});
 	}
 
-	// метод, который выводит на экран таксопарк
+	// РјРµС‚РѕРґ, РєРѕС‚РѕСЂС‹Р№ РІС‹РІРѕРґРёС‚ РЅР° СЌРєСЂР°РЅ С‚Р°РєСЃРѕРїР°СЂРє
 	public static void printTaxiStation(ArrayList<Car> arr) {
 		System.out.println();
 		Iterator<Car> itr = arr.iterator();
@@ -274,14 +295,14 @@ public class TaxiStation {
 		}
 	}
 
-	// метод, который находит автомобиль, который соответсвует заданному
-	// диапазону параметров скорости
+	// РјРµС‚РѕРґ, РєРѕС‚РѕСЂС‹Р№ РЅР°С…РѕРґРёС‚ Р°РІС‚РѕРјРѕР±РёР»СЊ, РєРѕС‚РѕСЂС‹Р№ СЃРѕРѕС‚РІРµС‚СЃРІСѓРµС‚ Р·Р°РґР°РЅРЅРѕРјСѓ
+	// РґРёР°РїР°Р·РѕРЅСѓ РїР°СЂР°РјРµС‚СЂРѕРІ СЃРєРѕСЂРѕСЃС‚Рё
 	public static void speedDiapazon(Collection<Car> arr) {
 		System.out.println();
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Введите нижнюю границу диапазона скорости: ");
+		System.out.print("Р’РІРµРґРёС‚Рµ РЅРёР¶РЅСЋСЋ РіСЂР°РЅРёС†Сѓ РґРёР°РїР°Р·РѕРЅР° СЃРєРѕСЂРѕСЃС‚Рё: ");
 		int startDiapazon = sc.nextInt();
-		System.out.print("Введите верхнюю границу диапазона скорости: ");
+		System.out.print("Р’РІРµРґРёС‚Рµ РІРµСЂС…РЅСЋСЋ РіСЂР°РЅРёС†Сѓ РґРёР°РїР°Р·РѕРЅР° СЃРєРѕСЂРѕСЃС‚Рё: ");
 		int endDiapazon = sc.nextInt();
 		int sum = 0;
 		for (Car tc : arr) {
@@ -292,7 +313,7 @@ public class TaxiStation {
 			}
 		}
 		if (sum == 0) {
-			System.out.println("Ни одной машины не найдено.");
+			System.out.println("РќРё РѕРґРЅРѕР№ РјР°С€РёРЅС‹ РЅРµ РЅР°Р№РґРµРЅРѕ.");
 		}
 		sc.close();
 	}

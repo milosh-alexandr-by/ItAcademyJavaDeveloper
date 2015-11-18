@@ -1,0 +1,41 @@
+package passengerCar;
+
+import closeCar.CloseCar;
+
+public class PassengerCar extends CloseCar {
+	
+	public final boolean trunk = true;   // есть багажник
+	public final boolean railDoor = false;  // нет двери на рельсах
+	
+	// определяем как открывается багажник
+	String typeOfTrunk;
+	public void typeOfTrunk(String typeOfTrunk) {
+		switch (typeOfTrunk) {
+		case "sedan": System.out.println("Открывается только крышка багажника.");
+		case "universal": System.out.println("Открывается багажник со стеклом.");
+		case "hatchback": System.out.println("Открывается укороченный багажник со стеклом.");
+		case "bigsuv": System.out.println("Дверь багажника открывается в сторону, а не вверх.");
+		}
+	}
+	
+	// ���� bodySUV=true, �� ��� �����������, �������� ������������ ����������� ������� � ����������� ����� ������
+	public boolean bodySUV;	  // ����� �����������
+	public void hasBodySUV(boolean hasBodySUV){
+		if (hasBodySUV==true) {
+			System.out.println("����������� �������. ����������� ����� ������.");
+		}
+		else {
+			System.out.println("�������� ������.");
+		}
+	}
+	
+	// ���� increasedRearSeat=true �� ����� ��� ������ ���������� ���������, �������� ��� ��������
+	public boolean increasedRearSeat;	  // ����������� ����� ��� ������ ����������
+	public void hasIncreasedRearSeat(boolean hasIncreasedRearSeat){
+		if (hasIncreasedRearSeat==true) {
+			System.out.println("����� ��� ������ ���������� ���������. ����� ����������� ������ ����� ������. ");
+		}
+
+	}
+
+}
