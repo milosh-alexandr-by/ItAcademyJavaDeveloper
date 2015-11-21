@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<studentList university="bguir" city="minsk">
+
+	<student id="1">
+	
+		<firstName>Max</firstName>
+		
+		<lastName>Payne</lastName>
+		
+		<age>20</age>
+		
+		<faculty>ksis</faculty>
+		
+	</student>
+	
+	<student id="2">
+	
+		<firstName>John</firstName>
+		
+		<lastName>Connor</lastName>
+		
+		<age>18</age>
+		
+		<faculty>mmf</faculty>
+		
+	</student>
+	
+</studentList>

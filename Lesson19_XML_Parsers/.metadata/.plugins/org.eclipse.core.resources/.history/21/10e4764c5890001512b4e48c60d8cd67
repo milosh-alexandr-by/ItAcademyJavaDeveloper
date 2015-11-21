@@ -1,0 +1,11 @@
+package product;
+
+public class DOM implements Parser {
+
+	@Override
+	public void performParser() {
+		
+		
+	}
+
+}

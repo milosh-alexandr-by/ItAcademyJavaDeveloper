@@ -1,0 +1,17 @@
+package main;
+
+import persers.DomParser;
+import persers.SaxParser;
+import persers.StaxParser;
+
+public class Parsers {
+
+	public static void main(String[] args) {
+		
+		DomParser.performDomPatser();
+		SaxParser.performSaxPatser();
+		StaxParser.performStaxPatser();
+
+	}
+
+}

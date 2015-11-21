@@ -1,0 +1,18 @@
+package persers;
+
+import org.xml.sax.Attributes;
+import org.xml.sax.helpers.DefaultHandler;
+
+public class Sax extends DefaultHandler {
+	
+	@Override
+	public void startDocument() {
+		System.out.println("Start parsing.");
+	}
+	
+	@Override
+	public void startElement(String uri, String localName, String qName, Attributes attributes) {
+				
+	}
+
+}

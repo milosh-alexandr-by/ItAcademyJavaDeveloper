@@ -1,0 +1,18 @@
+package single;
+
+public class Parsers {
+	
+	private static SingletoneParsers instance;
+	
+	private Parsers() {
+		
+	}
+	
+	public static synchronized SingletoneParsers getInstance(){
+		if (instance == null) {
+			instance = new SingletoneParsers();
+		}
+		return instance;
+	}
+
+}

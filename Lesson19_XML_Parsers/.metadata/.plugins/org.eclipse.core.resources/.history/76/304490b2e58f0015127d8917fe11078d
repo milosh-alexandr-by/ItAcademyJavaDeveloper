@@ -1,0 +1,36 @@
+package persers;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import javax.xml.stream.XMLInputFactory;
+import javax.xml.stream.XMLStreamException;
+import javax.xml.stream.XMLStreamReader;
+
+public class StaxParser {
+	
+	public static void performStaxPatser() {
+		boolean isUrl = false;
+		
+		XMLInputFactory factory = XMLInputFactory.newFactory();
+		try {
+			XMLStreamReader reader = factory.createXMLStreamReader(new FileInputStream("StudentList.xml"));
+			while (reader.hasNext()) {
+				int res = reader.next();
+				if (res == reader.START_ELEMENT) {
+					if (reader.getLocalName().equals("url")) {
+						isUrl = true;
+					}
+				}
+				
+					
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (XMLStreamException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

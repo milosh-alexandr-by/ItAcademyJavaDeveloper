@@ -1,0 +1,18 @@
+package single;
+
+public class Parsers {
+	
+	private static Parsers instance;
+	
+	private Parsers() {
+		
+	}
+	
+	public static synchronized Parsers getInstance(){
+		if (instance == null) {
+			instance = new Parsers();
+		}
+		return instance;
+	}
+
+}

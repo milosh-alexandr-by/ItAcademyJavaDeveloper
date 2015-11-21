@@ -1,0 +1,11 @@
+package persers;
+
+public class Parsers {
+
+	public static void main(String[] args) {
+		
+		DomParser.performDomPatser();
+
+	}
+
+}

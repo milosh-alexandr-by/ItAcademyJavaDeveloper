@@ -1,0 +1,12 @@
+package creator;
+
+import product.Parser;
+
+public class DOMParserCreator implements ParserCreator {
+
+	@Override
+	public Parser createParser() {
+		return new Dom;
+	}
+
+}

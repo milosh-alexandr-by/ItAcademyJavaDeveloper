@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Переименовать единицу компиляции &apos;SortedByFuelConsumption.java&apos; в &apos;SortedByPrice.java&apos;&#x0D;&#x0A;- Original project: &apos;ProjectTaxiStation&apos;&#x0D;&#x0A;- Исходный элемент: &apos;SortedByFuelConsumption.java&apos;&#x0D;&#x0A;- Переименованный элемент: &apos;SortedByPrice.java&apos;" description="Переименовать модуль компиляции &apos;SortedByFuelConsumption.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{SortedByFuelConsumption.java" name="SortedByPrice.java" references="false" stamp="1445970331969" version="1.0"/>
-</session>

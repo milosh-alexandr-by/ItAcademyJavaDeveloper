@@ -1,0 +1,10 @@
+package persers;
+
+public class StaxParser {
+	
+	public static void performStaxPatser() {
+		
+		
+	}
+
+}

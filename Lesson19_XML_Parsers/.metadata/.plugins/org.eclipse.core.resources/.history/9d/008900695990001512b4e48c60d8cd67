@@ -1,0 +1,19 @@
+package main;
+
+import product.Parser;
+import creator.DOMParserCreator;
+import creator.ParserCreator;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+//		ParserCreator creator = new DOMParserCreator();
+		ParserCreator creator = new SAXParserCreator();
+//		ParserCreator creator = new STAXParserCreator();
+		Parser parser = creator.createParser();
+		parser.performParser();
+
+	}
+
+}
