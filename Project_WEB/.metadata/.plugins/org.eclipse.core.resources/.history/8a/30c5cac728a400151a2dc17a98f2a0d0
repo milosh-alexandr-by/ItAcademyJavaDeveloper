@@ -36,8 +36,6 @@ public class HotelRequestSystem extends HttpServlet {
 			System.out.println(theException);
 		}
 		
-		response.sendRedirect("WaitAnswer.jsp");
-		
 /*
 		
 		response.setContentType("text/html");

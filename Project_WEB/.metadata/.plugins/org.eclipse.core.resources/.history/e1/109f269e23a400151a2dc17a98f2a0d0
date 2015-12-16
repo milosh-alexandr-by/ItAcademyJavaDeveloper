@@ -1,0 +1,54 @@
+package hotelRequestSystem;
+
+public class ClientRequestBean {
+
+    private String name;
+    private String numberOfSeats;
+    private String roomClass;
+    private String comingDate;
+    private String numberOfDays;
+    	
+	
+    public String getName() {
+       return name;
+	}
+    
+    public void setName(String newName) {
+    	name = newName;
+	}
+
+    public void setnumberOfSeats(String newnumberOfSeats) {
+    	numberOfSeats = newnumberOfSeats;
+	}
+
+	
+    public String getroomClass() {
+       return roomClass;
+			}
+
+    public void setroomClass(String newroomClass) {
+    	roomClass = newroomClass;
+			}
+			
+
+    public String getcomingDate() {
+       return comingDate;
+	}
+
+    public void setcomingDate(String newcomingDate) {
+    	comingDate = newcomingDate;
+	}
+	
+			
+    public String getnumberOfDays() {
+       return numberOfDays;
+			}
+
+    public void setnumberOfDays(String newnumberOfDays) {
+    	numberOfDays = newnumberOfDays;
+			}
+
+				
+
+	
+}

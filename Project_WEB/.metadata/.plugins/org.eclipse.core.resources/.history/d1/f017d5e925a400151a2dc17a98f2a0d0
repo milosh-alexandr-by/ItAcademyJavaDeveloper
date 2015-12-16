@@ -26,17 +26,13 @@ public class HotelRequestSystem extends HttpServlet {
 			clientReuest.setName(request.getParameter("Name"));
 			clientReuest.setNumberOfSeats(request.getParameter("NumberOfSeats"));
 			clientReuest.setRoomClass(request.getParameter("RoomClass"));
-			clientReuest.setComingDate(request.getParameter("ComingDate"));
-			clientReuest.setNumberOfDays(request.getParameter("NumberOfDays"));
-			
-			clientReuest = ClientRequestDAO.insert(clientReuest);
+			clientReuest.setName(request.getParameter("ComingDate"));
+			clientReuest.setName(request.getParameter("NumberOfDays"));
 					
 			
 		} catch (Throwable theException) {
 			System.out.println(theException);
 		}
-		
-		response.sendRedirect("WaitAnswer.jsp");
 		
 /*
 		

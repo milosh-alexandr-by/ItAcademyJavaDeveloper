@@ -1,0 +1,23 @@
+package hotelRequestSystem;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class ClientRequestDAO {
+
+	static Connection con = null;
+	static ResultSet rs = null;
+	
+	public static ClientRequestBean insert(ClientRequestBean bean) {
+		
+		Statement stmt = null;
+		
+		String name = bean.getName();
+		String numberOfSeats = bean.getNumberOfSeats();
+		String roomClass = bean.getRoomClass();
+		String comingDate = bean.getComingDate();
+		String numberOfDays = bean.getNumberOfDays();
+	}
+	
+}

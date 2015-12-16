@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_8n-5kZ5PEeW_kbLoFh6I_A" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_8n-5kp5PEeW_kbLoFh6I_A" bindingContexts="_8n-5lJ5PEeW_kbLoFh6I_A">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;ClientRequest.jsp&quot; tooltip=&quot;HotelRequestSystem/WebContent/ClientRequest.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/HotelRequestSystem/WebContent/ClientRequest.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;HotelRooms.jsp&quot; tooltip=&quot;HotelRequestSystem/WebContent/HotelRooms.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/HotelRequestSystem/WebContent/HotelRooms.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;ClientServlet.jsp&quot; tooltip=&quot;HotelRequestSystem/WebContent/ClientServlet.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/HotelRequestSystem/WebContent/ClientServlet.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CheckAdminServlet.java&quot; tooltip=&quot;HotelRequestSystem/src/hotelRequestSystem/CheckAdminServlet.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/HotelRequestSystem/src/hotelRequestSystem/CheckAdminServlet.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;CheckAdministrator.jsp&quot; tooltip=&quot;HotelRequestSystem/WebContent/CheckAdministrator.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/HotelRequestSystem/WebContent/CheckAdministrator.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;Administrator.jsp&quot; tooltip=&quot;HotelRequestSystem/WebContent/Administrator.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/HotelRequestSystem/WebContent/Administrator.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HotelRequestSystem.java&quot; tooltip=&quot;HotelRequestSystem/src/hotelRequestSystem/HotelRequestSystem.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/HotelRequestSystem/src/hotelRequestSystem/HotelRequestSystem.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;ClientRequest.jsp&quot; tooltip=&quot;HotelRequestSystem/WebContent/ClientRequest.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/HotelRequestSystem/WebContent/ClientRequest.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;Administrator.jsp&quot; tooltip=&quot;HotelRequestSystem/WebContent/Administrator.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/HotelRequestSystem/WebContent/Administrator.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CheckAdminServlet.java&quot; tooltip=&quot;HotelRequestSystem/src/hotelRequestSystem/CheckAdminServlet.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/HotelRequestSystem/src/hotelRequestSystem/CheckAdminServlet.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;CheckAdministrator.jsp&quot; tooltip=&quot;HotelRequestSystem/WebContent/CheckAdministrator.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/HotelRequestSystem/WebContent/CheckAdministrator.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;ClientServlet.jsp&quot; tooltip=&quot;HotelRequestSystem/WebContent/ClientServlet.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/HotelRequestSystem/WebContent/ClientServlet.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HotelRequestSystem.java&quot; tooltip=&quot;HotelRequestSystem/src/hotelRequestSystem/HotelRequestSystem.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/HotelRequestSystem/src/hotelRequestSystem/HotelRequestSystem.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ClientRequestDAO.java&quot; tooltip=&quot;HotelRequestSystem/src/hotelRequestSystem/ClientRequestDAO.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/HotelRequestSystem/src/hotelRequestSystem/ClientRequestDAO.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ClientRequestBean.java&quot; tooltip=&quot;HotelRequestSystem/src/hotelRequestSystem/ClientRequestBean.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/HotelRequestSystem/src/hotelRequestSystem/ClientRequestBean.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;HotelRooms.jsp&quot; tooltip=&quot;HotelRequestSystem/WebContent/HotelRooms.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/HotelRequestSystem/WebContent/HotelRooms.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_8n-5kp5PEeW_kbLoFh6I_A" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_9Tdfgp5PEeW_kbLoFh6I_A" label="%trimmedwindow.label.eclipseSDK" x="-254" y="5" width="1164" height="1037">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_8n-5kp5PEeW_kbLoFh6I_A" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_9Tdfgp5PEeW_kbLoFh6I_A" label="%trimmedwindow.label.eclipseSDK" x="6" y="4" width="941" height="1037">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workingSets/>"/>
@@ -76,11 +76,10 @@
               <children xsi:type="advanced:Placeholder" xmi:id="_92YmZp5PEeW_kbLoFh6I_A" elementId="org.eclipse.jdt.ui.PackagesView" toBeRendered="false" ref="_92J84J5PEeW_kbLoFh6I_A"/>
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_92YmaJ5PEeW_kbLoFh6I_A" containerData="8025" selectedElement="_-fK-oJ9VEeWeCO6WjuXAFA" horizontal="true">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_-fK-oJ9VEeWeCO6WjuXAFA" containerData="9000" selectedElement="_92YmbZ5PEeW_kbLoFh6I_A">
-                <children xsi:type="advanced:Placeholder" xmi:id="_92YmaZ5PEeW_kbLoFh6I_A" elementId="org.eclipse.ui.editorss" containerData="6178" ref="_9taQkJ5PEeW_kbLoFh6I_A"/>
-                <children xsi:type="basic:PartStack" xmi:id="_92YmbZ5PEeW_kbLoFh6I_A" elementId="bottomRight" containerData="3822" selectedElement="_92YmcJ5PEeW_kbLoFh6I_A">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_-fK-oJ9VEeWeCO6WjuXAFA" containerData="9000" selectedElement="_92YmaZ5PEeW_kbLoFh6I_A">
+                <children xsi:type="advanced:Placeholder" xmi:id="_92YmaZ5PEeW_kbLoFh6I_A" elementId="org.eclipse.ui.editorss" containerData="8362" ref="_9taQkJ5PEeW_kbLoFh6I_A"/>
+                <children xsi:type="basic:PartStack" xmi:id="_92YmbZ5PEeW_kbLoFh6I_A" elementId="bottomRight" containerData="1638" selectedElement="_92YmcJ5PEeW_kbLoFh6I_A">
                   <tags>newtablook</tags>
-                  <tags>active</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_92Ymbp5PEeW_kbLoFh6I_A" elementId="org.eclipse.ui.views.AllMarkersView" ref="_92J84Z5PEeW_kbLoFh6I_A"/>
                   <children xsi:type="advanced:Placeholder" xmi:id="_92Ymb55PEeW_kbLoFh6I_A" elementId="org.eclipse.ui.views.PropertySheet" ref="_92Kj8J5PEeW_kbLoFh6I_A"/>
                   <children xsi:type="advanced:Placeholder" xmi:id="_92YmcJ5PEeW_kbLoFh6I_A" elementId="org.eclipse.wst.server.ui.ServersView" ref="_92Kj8Z5PEeW_kbLoFh6I_A"/>
@@ -127,75 +126,18 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_9taQkJ5PEeW_kbLoFh6I_A" elementId="org.eclipse.ui.editorss" selectedElement="_9taQkZ5PEeW_kbLoFh6I_A">
-      <children xsi:type="basic:PartStack" xmi:id="_9taQkZ5PEeW_kbLoFh6I_A" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_D3HrAJ9nEeWeCO6WjuXAFA">
+      <children xsi:type="basic:PartStack" xmi:id="_9taQkZ5PEeW_kbLoFh6I_A" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_2J-a0KQiEeW6g5h1U2YAAQ">
         <tags>newtablook</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <children xsi:type="basic:Part" xmi:id="_Cu_P4J5XEeW_kbLoFh6I_A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="HotelRequestSystem.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HotelRequestSystem.java&quot; partName=&quot;HotelRequestSystem.java&quot; title=&quot;HotelRequestSystem.java&quot; tooltip=&quot;HotelRequestSystem/src/hotelRequestSystem/HotelRequestSystem.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/HotelRequestSystem/src/hotelRequestSystem/HotelRequestSystem.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;1115&quot; selectionOffset=&quot;775&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_AlI3YJ5rEeW_kbLoFh6I_A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ClientServlet.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;ClientServlet.jsp&quot; partName=&quot;ClientServlet.jsp&quot; title=&quot;ClientServlet.jsp&quot; tooltip=&quot;HotelRequestSystem/WebContent/ClientServlet.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/HotelRequestSystem/WebContent/ClientServlet.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;902&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <tags>active</tags>
+        <children xsi:type="basic:Part" xmi:id="_2J-a0KQiEeW6g5h1U2YAAQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ClientRequest.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;ClientRequest.jsp&quot; partName=&quot;ClientRequest.jsp&quot; title=&quot;ClientRequest.jsp&quot; tooltip=&quot;HotelRequestSystem/WebContent/ClientRequest.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/HotelRequestSystem/WebContent/ClientRequest.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;20&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
           <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_D3HrAJ9nEeWeCO6WjuXAFA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ClientRequest.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;ClientRequest.jsp&quot; partName=&quot;ClientRequest.jsp&quot; title=&quot;ClientRequest.jsp&quot; tooltip=&quot;HotelRequestSystem/WebContent/ClientRequest.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/HotelRequestSystem/WebContent/ClientRequest.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1250&quot; selectionTopPixel=&quot;135&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_8oPCcJ9mEeWeCO6WjuXAFA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="HotelRooms.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;HotelRooms.jsp&quot; partName=&quot;HotelRooms.jsp&quot; title=&quot;HotelRooms.jsp&quot; tooltip=&quot;HotelRequestSystem/WebContent/HotelRooms.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/HotelRequestSystem/WebContent/HotelRooms.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;19&quot; selectionOffset=&quot;9&quot; selectionTopPixel=&quot;90&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="__fp7gJ9mEeWeCO6WjuXAFA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Client.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;Client.jsp&quot; partName=&quot;Client.jsp&quot; title=&quot;Client.jsp&quot; tooltip=&quot;HotelRequestSystem/WebContent/Client.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/HotelRequestSystem/WebContent/Client.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;395&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_ami9EJ5mEeW_kbLoFh6I_A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="web.xml" iconURI="platform:/plugin/org.eclipse.wst.xml.ui/icons/xmldoc.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart&quot; name=&quot;web.xml&quot; partName=&quot;web.xml&quot; title=&quot;web.xml&quot; tooltip=&quot;HotelRequestSystem/WebContent/WEB-INF/web.xml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/HotelRequestSystem/WebContent/WEB-INF/web.xml&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_f--jAJ9mEeWeCO6WjuXAFA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Administrator.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;Administrator.jsp&quot; partName=&quot;Administrator.jsp&quot; title=&quot;Administrator.jsp&quot; tooltip=&quot;HotelRequestSystem/WebContent/Administrator.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/HotelRequestSystem/WebContent/Administrator.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;759&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_i5B9kKEMEeWrXu1Xcn6pvQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ClientCheckRequest.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;ClientCheckRequest.jsp&quot; partName=&quot;ClientCheckRequest.jsp&quot; title=&quot;ClientCheckRequest.jsp&quot; tooltip=&quot;HotelRequestSystem/WebContent/ClientCheckRequest.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/HotelRequestSystem/WebContent/ClientCheckRequest.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;442&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_oe3A0KEQEeWrXu1Xcn6pvQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="WaitAnswer.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;WaitAnswer.jsp&quot; partName=&quot;WaitAnswer.jsp&quot; title=&quot;WaitAnswer.jsp&quot; tooltip=&quot;HotelRequestSystem/WebContent/WaitAnswer.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/HotelRequestSystem/WebContent/WaitAnswer.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;400&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_yj8doKEUEeWrXu1Xcn6pvQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="CheckAdministrator.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;CheckAdministrator.jsp&quot; partName=&quot;CheckAdministrator.jsp&quot; title=&quot;CheckAdministrator.jsp&quot; tooltip=&quot;HotelRequestSystem/WebContent/CheckAdministrator.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/HotelRequestSystem/WebContent/CheckAdministrator.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;2&quot; selectionOffset=&quot;515&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_BXOrwKEVEeWrXu1Xcn6pvQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="CheckAdminServlet.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CheckAdminServlet.java&quot; partName=&quot;CheckAdminServlet.java&quot; title=&quot;CheckAdminServlet.java&quot; tooltip=&quot;HotelRequestSystem/src/hotelRequestSystem/CheckAdminServlet.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/HotelRequestSystem/src/hotelRequestSystem/CheckAdminServlet.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2332&quot; selectionTopPixel=&quot;156&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
-          <tags>removeOnHide</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
       </children>
     </sharedElements>
@@ -251,8 +193,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot;/>"/>
       <tags>View</tags>
       <tags>categoryTag:Server</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_ub71IJ5QEeW_kbLoFh6I_A" elementId="org.eclipse.wst.server.ui.ServersView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -331,7 +271,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_9euUUJ5PEeW_kbLoFh6I_A" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_u-P6YKD1EeWrXu1Xcn6pvQ" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_8pn4cZ5PEeW_kbLoFh6I_A"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="__FnPN6QZEeW6g5h1U2YAAQ" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_8pn4cZ5PEeW_kbLoFh6I_A"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_9euUUZ5PEeW_kbLoFh6I_A" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -364,7 +304,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_9evicJ5PEeW_kbLoFh6I_A" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_u-Uy4aD1EeWrXu1Xcn6pvQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_8pnRV55PEeW_kbLoFh6I_A"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="__GD7JKQZEeW6g5h1U2YAAQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_8pnRV55PEeW_kbLoFh6I_A"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_9evicZ5PEeW_kbLoFh6I_A" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -402,8 +342,18 @@
       <children xsi:type="menu:ToolControl" xmi:id="_-bFO4J5PEeW_kbLoFh6I_A" elementId="org.eclipse.ui.ide.perspectivestack(minimized)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <tags>TrimStack</tags>
       </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_RYjbEKQaEeW6g5h1U2YAAQ" elementId="topLeft(org.eclipse.jst.j2ee.J2EEPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
     </trimBars>
-    <trimBars xmi:id="_9sBJcJ5PEeW_kbLoFh6I_A" elementId="org.eclipse.ui.trim.vertical2" side="Right"/>
+    <trimBars xmi:id="_9sBJcJ5PEeW_kbLoFh6I_A" elementId="org.eclipse.ui.trim.vertical2" toBeRendered="false" side="Right">
+      <children xsi:type="menu:ToolControl" xmi:id="_RZDKUKQaEeW6g5h1U2YAAQ" elementId="bottomRight(org.eclipse.jst.j2ee.J2EEPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_RZVeMKQaEeW6g5h1U2YAAQ" elementId="topRight(org.eclipse.jst.j2ee.J2EEPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+    </trimBars>
   </children>
   <bindingTables xmi:id="_8n-5k55PEeW_kbLoFh6I_A" contributorURI="platform:/plugin/org.eclipse.platform" bindingContext="_8n-5lJ5PEeW_kbLoFh6I_A">
     <bindings xmi:id="_8qjFap5PEeW_kbLoFh6I_A" keySequence="CTRL+A" command="_8pk1G55PEeW_kbLoFh6I_A"/>
