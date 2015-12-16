@@ -1,0 +1,38 @@
+package hotelRequestSystem;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet(name = "HotelRequestSystem", urlPatterns = {"/HotelRequestSystem"})
+public class HotelRequestSystem extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		response.setContentType("text/html");
+		response.setCharacterEncoding("UTF-8");
+		
+		String mame = request.getParameter("Name");
+		String numberOfSeats = request.getParameter("NumberOfSeats");
+		String roomClass = request.getParameter("RoomClass");
+		String comingDate = request.getParameter("ComingDate");
+		String numberOfDays = request.getParameter("NumberOfDays");
+		
+		PrintWriter out = response.getWriter();
+//		out.println("Name: " + mame + ".");
+//		out.println("Number of seats: " + numberOfSeats + ".");
+//		out.println("Room Class: " + roomClass + ".");
+//		out.println("Coming date: " + comingDate + ".");
+//		out.println("Number of days: " + numberOfDays + ".");
+//		out.close();
+		out.println("Your request taken. Wait answer of administrator.");
+		
+	}
+
+}

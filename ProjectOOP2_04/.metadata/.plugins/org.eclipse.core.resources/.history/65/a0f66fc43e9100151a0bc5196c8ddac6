@@ -1,0 +1,31 @@
+package car;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Singleton {
+	
+	static Date date = new Date();
+	static SimpleDateFormat ft = new SimpleDateFormat("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
+	
+	private static Singleton instance;
+	
+	private Singleton() {
+		
+	}
+	
+	public static Singleton getInstance() {
+		if (instance == null) {
+			instance = new Singleton();
+		}
+		return instance;
+	}
+	
+	public static void write(String str) {
+		System.out.println(ft.format(date) + ": " + str + ".\n");
+		
+	}
+
+	
+
+}

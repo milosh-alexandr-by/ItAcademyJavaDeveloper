@@ -13,6 +13,5 @@ public class Minivan extends Van  {
 		this.setPrice(price);
 		this.setMaxSpeed(maxSpeed);
 	}
-
 	
 }

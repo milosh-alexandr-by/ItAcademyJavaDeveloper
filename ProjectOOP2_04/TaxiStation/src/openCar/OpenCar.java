@@ -1,7 +1,6 @@
 package openCar;
 import car.Car;
 
-
 public abstract class OpenCar extends Car {
 
 	// если roof = true то машина с крышей

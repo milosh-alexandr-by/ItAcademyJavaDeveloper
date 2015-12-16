@@ -1,0 +1,14 @@
+package main;
+
+import connection.DBConnection;
+
+public class Main {
+
+	public static void main(String[] args) {
+		DBConnection connect = new DBConnection("localhost", "", "", "test");
+		connect.initProperties();
+		connect.init();
+
+	}
+
+}

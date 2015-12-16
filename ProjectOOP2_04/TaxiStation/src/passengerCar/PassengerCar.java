@@ -1,5 +1,6 @@
 package passengerCar;
 
+import car.SelectLanguage;
 import closeCar.CloseCar;
 
 public class PassengerCar extends CloseCar {
@@ -11,10 +12,10 @@ public class PassengerCar extends CloseCar {
 	String typeOfTrunk;
 	public void typeOfTrunk(String typeOfTrunk) {
 		switch (typeOfTrunk) {
-		case "sedan": System.out.println("Открывается только крышка багажника.");
-		case "universal": System.out.println("Открывается багажник со стеклом.");
-		case "hatchback": System.out.println("Открывается укороченный багажник со стеклом.");
-		case "bigsuv": System.out.println("Дверь багажника открывается в сторону, а не вверх.");
+		case "sedan": System.out.println(SelectLanguage.rb.getString("opensTheBootLidOnly"));
+		case "universal": System.out.println(SelectLanguage.rb.getString("opensRackWithGlass"));
+		case "hatchback": System.out.println(SelectLanguage.rb.getString("opensShortTrunkWithGlass"));
+		case "bigsuv": System.out.println(SelectLanguage.rb.getString("tailgateOpensToSideNotUp"));
 		}
 	}
 	
@@ -22,10 +23,10 @@ public class PassengerCar extends CloseCar {
 	public boolean bodySUV;	  // кузов внедоржника
 	public void hasBodySUV(boolean hasBodySUV){
 		if (hasBodySUV==true) {
-			System.out.println("Увеличенный клиренс. Увеличенный объём салона.");
+			System.out.println(SelectLanguage.rb.getString("increasedcabin"));
 		}
 		else {
-			System.out.println("Легковая машина.");
+			System.out.println(SelectLanguage.rb.getString("passengerCar"));
 		}
 	}
 	
@@ -33,7 +34,7 @@ public class PassengerCar extends CloseCar {
 	public boolean increasedRearSeat;	  // увеличенное место для задних пассажиров
 	public void hasIncreasedRearSeat(boolean hasIncreasedRearSeat){
 		if (hasIncreasedRearSeat==true) {
-			System.out.println("Место для задних пассажиров увеличено. Можно расположить диваны вдоль салона. ");
+			System.out.println(SelectLanguage.rb.getString("spaceRearPassIncreased"));
 		}
 
 	}

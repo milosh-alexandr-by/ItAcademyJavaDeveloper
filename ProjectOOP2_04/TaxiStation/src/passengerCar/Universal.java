@@ -13,8 +13,4 @@ public class Universal extends PassengerCar {
 		this.setMaxSpeed(maxSpeed);
 	}
 
-
-
-
-
 }

@@ -22,10 +22,10 @@ public class Car {
 	public boolean roof;	// крыша
 	public void hasRoof(boolean hasRoof){
 		if (hasRoof==true) {
-			System.out.println("Машина с жёсткой крышей.");
+			System.out.println(SelectLanguage.rb.getString("solidRoofCar"));
 		}
 		else {
-			System.out.println("Машина с раздвигающейся крышей.");
+			System.out.println(SelectLanguage.rb.getString("moveRoofCar"));
 		}
 	}
 	
@@ -59,7 +59,7 @@ public class Car {
 	public void setFuelConsumption(double fuelConsumption) {
 		try {
 			if (fuelConsumption<0) {
-				throw new Exception("Расход топлива не может быть отрицательным.");
+				throw new Exception(SelectLanguage.rb.getString("fuelConsNotNeg"));
 			}
 			this.fuelConsumption = fuelConsumption;
 		} catch (Exception e) {
@@ -77,7 +77,7 @@ public class Car {
 	public void setPrice(int price) {
 		try {
 			if (fuelConsumption<0) {
-				throw new Exception("Цена не может быть отрицательной.");
+				throw new Exception(SelectLanguage.rb.getString("priceNotNeg"));
 			}
 			this.price = price;
 		} catch (Exception e) {
@@ -94,7 +94,7 @@ public class Car {
 	public void setMaxSpeed(int maxSpeed) {
 		try {
 			if (fuelConsumption<0) {
-				throw new Exception("Максимальная скорость не может быть отрицательной.");
+				throw new Exception(SelectLanguage.rb.getString("maxSpeedNotNeg"));
 			}
 			this.maxSpeed = maxSpeed;
 		} catch (Exception e) {

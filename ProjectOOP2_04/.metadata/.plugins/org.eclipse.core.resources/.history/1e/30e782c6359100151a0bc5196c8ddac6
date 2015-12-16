@@ -1,0 +1,14 @@
+stationCost=Cost of the taxi station: 
+sortPrice=Sorted by price:
+dollars=dollars.
+sortFuel=Sorted by fuel consumption:
+lowDiapazon=Enter the lower limit of the speed range:
+upDiapazon=Enter the upper limit of the speed range:
+noCar=Found none car.
+solidRoofCar=Car with solid roof.
+moveRoofCar=Car with move roof.
+priceNotNeg=Price can not be negative.
+fuelConsNotNeg=Fuel consumption can not be negative.
+maxSpeedNotNeg=Maximum speed can not be negative.
+cargoBodySeparatedPassenger=The car has a cargo body, separated from the passenger compartment.
+carNoCargoBody=The car has no cargo body.

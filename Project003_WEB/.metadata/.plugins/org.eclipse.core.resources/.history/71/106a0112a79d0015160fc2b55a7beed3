@@ -1,0 +1,30 @@
+package connection;
+
+import java.util.Properties;
+
+public class DBConnection {
+	private String host;
+	private String root;
+	private String password;
+	private String nameDataBase;
+	
+	private Properties properties = new Properties();
+	
+	public DBConnection (String host, String root, String password, String nameDataBase) {
+		this.host = host;
+		this.root = root;
+		this.password = password;
+		this.nameDataBase = nameDataBase;
+		
+		public void initProperties() {
+			properties.setProperty("user", root);
+			properties.setProperty("password", password);
+			properties.setProperty("characterEncoding", "UTF-8");
+		}
+		
+		public void init() {
+			
+		}
+	}
+
+}

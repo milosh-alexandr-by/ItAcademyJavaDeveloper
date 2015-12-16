@@ -12,7 +12,7 @@ public class StAX implements Parser {
 	@Override
 	public void performParser() {
 		
-System.out.println("-------------- StAX Parser - Start ---------------");
+		System.out.println("-------------- StAX Parser - Start ---------------");
 		
 		boolean isStudent = false;
 		boolean isFirstName = false;

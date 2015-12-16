@@ -1,0 +1,9 @@
+stationCost=Cost of the taxi station: 
+sortPrice=Sorted by price:
+dollars=dollars.
+sortFuel=Sorted by fuel consumption:
+lowDiapazon=Enter the lower limit of the speed range:
+upDiapazon=Enter the upper limit of the speed range:
+noCar=Found none car.
+solidRoofCar=Car with solid roof.
+moveRoofCar=Car with move roof.

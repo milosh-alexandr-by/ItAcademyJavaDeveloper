@@ -1,0 +1,9 @@
+/** "Abstract Builder" */
+
+package builder;
+
+public abstract class ParserBuilder {
+
+	protected Parser parser;
+	
+}

@@ -1,0 +1,11 @@
+package servlets;
+
+import javax.servlet.http.HttpServlet;
+
+public class MyServlet extends HttpServlet {
+
+	private static final long serialVersionUID = 4821121089141927458L;
+
+
+
+}

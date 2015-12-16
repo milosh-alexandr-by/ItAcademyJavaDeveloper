@@ -1,0 +1,35 @@
+package connection;
+
+import java.util.Properties;
+
+public class DBConnection {
+	private String host;
+	private String root;
+	private String password;
+	private String nameDataBase;
+	private String url;
+	
+	private Properties properties = new Properties();
+	
+	public DBConnection (String host, String root, String password, String nameDataBase) {
+		this.host = host;
+		this.root = root;
+		this.password = password;
+		this.nameDataBase = nameDataBase;
+		
+		public void initProperties() {
+			
+			url = "jdbc:mysql://" + host + "/" + nameDataBase + "";
+			
+			properties.setProperty("user", root);
+			properties.setProperty("password", password);
+			properties.setProperty("characterEncoding", "UTF-8");
+			properties.setProperty("useUnicode", "true");
+		}
+		
+		public void init() {
+			
+		}
+	}
+
+}

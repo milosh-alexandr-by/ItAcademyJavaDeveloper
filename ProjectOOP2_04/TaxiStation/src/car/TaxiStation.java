@@ -47,38 +47,35 @@ import van.Minibus;
 import van.Minivan;
 
 public class TaxiStation {
-
+	
 	public static void main(String[] args) throws IOException {
-
-		Scanner sc = new Scanner(System.in);		
-		System.out.println("Выберите язык:");
-		System.out.println("1. Русский.");
-		System.out.println("2. English.");
-		int i = sc.nextInt();
-		Locale loc = null;
-		switch(i){
-			case 1: loc = new Locale("ru", "RU"); break;
-			case 2: loc = new Locale("en", "US"); break;
-		}	
-		ResourceBundle rb = ResourceBundle.getBundle("car/lang", loc);
-		
-		
+	
+		// Статический метод класса SelectLanguage, в котором пользователь выбирает локаль, в которой он будет работать
+		SelectLanguage.selectLanguage();
+		// Синглтон записывает строку в логгер о том, что пользователь выбрал язык локали
+		Singleton.getInstance().write(SelectLanguage.rb.getString("userSelectLanguage") 
+				+ SelectLanguage.loc.getDisplayLanguage(SelectLanguage.loc));
+			
 		
 		// Создаём список автомобилей таксопарка.
 		ArrayList<Car> carList = new ArrayList<>();
 		carList = buildTaxiStation();
 
+		
 		// Создаём .txt файл со списком автомобилей.
 //		createNewTxtFile("TaxiStation.txt", carList);
 
+		
 		// Вывести на экран стоимость таксопарка.
 		costOfTaxiStation(carList);
 
+		
 		// Вывести на экран таксопарк с помощью for each.
 		for (Car ob : carList) {
 			System.out.println(ob);
 		}
 
+		
 		// Сортировка по расходу топлива.
 		sortedByFuelConsumption(carList);
 		// Выводим на экран таксопарк, отсортированный по расходу топлива.
@@ -87,19 +84,25 @@ public class TaxiStation {
 		// топлива.
 //		createNewTxtFile("SortedByFuelConsumption.txt", carList);
 
+		
 		// Сортировка по цене.
 		Collections.sort(carList, new SortedByPrice());
 		// Выводим на экран таксопарк, отсортированный по цене.
 		System.out.println();
-		System.out.print(rb.getString("sortPrice"));
+		System.out.print(SelectLanguage.rb.getString("sortPrice"));
 		printTaxiStation(carList);
 		// Создаём .txt файл со списком автомобилей, отсортированных по цене.
 //		createNewTxtFile("SortedByPrice.txt", carList);
 
+		
 		// Находит автомобиль, который соответсвует заданному диапазону
 		// параметров скорости.
-//		speedDiapazon(carList);
-
+		speedDiapazon(carList);
+		
+		
+		// Создаём текстовый файл Logger.txt с нашими событиями
+		Singleton.createLoggerText();
+				
 	}
 	
 	// создадим списки, в которых будем хранить все виды машин
@@ -227,16 +230,18 @@ public class TaxiStation {
 					break;
 				}
 				line = tsbr.readLine();
+				
 			}
 		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			System.out.println(e);
+//			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
 	}
 
-	// метод, который создаёт .txt файл, с нужным для нас расположением
-	// автомобилей
+	// метод, который создаёт .txt файл, с нужным для нас расположением автомобилей
 	public static void createNewTxtFile(String nameOfFile,
 			ArrayList<? extends Car> carList) throws IOException {
 		int size = carList.size();
@@ -261,14 +266,14 @@ public class TaxiStation {
 		while (itr.hasNext()) {
 			priceOfTaxiStation += itr.next().getPrice();
 		}
-		System.out.println("stationCost" + nF.format(priceOfTaxiStation)
-				+ " долларов.\n");
+		System.out.println(SelectLanguage.rb.getString("stationCost") + nF.format(priceOfTaxiStation)
+				+ " " + SelectLanguage.rb.getString("dollars") +"\n");
 	}
 
 	// метод для сортровоки по расходу топлива
 	public static void sortedByFuelConsumption(ArrayList<? extends Car> arr) {
 		System.out.println();
-		System.out.print("Сортировка по расходу топлива:");
+		System.out.print(SelectLanguage.rb.getString("sortFuel"));
 		Collections.sort(arr, new Comparator<Car>() {
 			@Override
 			public int compare(Car obj1, Car obj2) {
@@ -300,10 +305,14 @@ public class TaxiStation {
 	public static void speedDiapazon(Collection<Car> arr) {
 		System.out.println();
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Введите нижнюю границу диапазона скорости: ");
+		System.out.print(SelectLanguage.rb.getString("lowDiapazon"));
 		int startDiapazon = sc.nextInt();
-		System.out.print("Введите верхнюю границу диапазона скорости: ");
+		Singleton.getInstance().write(SelectLanguage.rb.getString("userSelectLowDiapazon")
+				+ startDiapazon + " " + SelectLanguage.rb.getString("speedDimension"));
+		System.out.print(SelectLanguage.rb.getString("upDiapazon"));
 		int endDiapazon = sc.nextInt();
+		Singleton.getInstance().write(SelectLanguage.rb.getString("userSelectUpDiapazon")
+				+ endDiapazon + " " + SelectLanguage.rb.getString("speedDimension"));
 		int sum = 0;
 		for (Car tc : arr) {
 			if (tc.getMaxSpeed() >= startDiapazon
@@ -313,7 +322,7 @@ public class TaxiStation {
 			}
 		}
 		if (sum == 0) {
-			System.out.println("Ни одной машины не найдено.");
+			System.out.println(SelectLanguage.rb.getString("noCar"));
 		}
 		sc.close();
 	}

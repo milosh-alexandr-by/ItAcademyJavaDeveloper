@@ -1,0 +1,8 @@
+package connection;
+
+public class DBConnection {
+	private String host;
+	private String root;
+	private String password;
+
+}

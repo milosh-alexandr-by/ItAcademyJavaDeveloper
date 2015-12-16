@@ -12,5 +12,4 @@ public class Targa extends OpenCar{
 		this.setMaxSpeed(maxSpeed);
 	}
 
-
 }

@@ -1,0 +1,32 @@
+package jdbcMilosh;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class JdbcMilosh {
+
+	private static final String url = "jdbc:mysql://localhost:3306/milosh";
+    private static final String user = "root";
+    private static final String password = "root";
+  	
+	public static void main(String[] args) {
+		
+		String query = "select * from expenses";
+		
+	    try (	Connection con = DriverManager.getConnection(url, user, password);
+	    		Statement stmt = con.createStatement();
+	    		ResultSet rs = stmt.executeQuery(query) )
+	    {	 
+	    	while (rs.next()) {
+	    		System.out.println(rs.getString(1) + ", " + rs.getString("paydate") + ", " + rs.getString("receiver") + ", " + rs.getString("value"));}
+	    } catch (SQLException sqlEx) {
+	            sqlEx.printStackTrace();
+	    }
+		
+
+	}
+
+}

@@ -1,0 +1,24 @@
+package connection;
+
+public class DBConnection {
+	private String host;
+	private String root;
+	private String password;
+	private String nameDataBase;
+	
+	public DBConnection (String host, String root, String password, String nameDataBase) {
+		this.host = host;
+		this.root = root;
+		this.password = password;
+		this.nameDataBase = nameDataBase;
+		
+		public void initProperties() {
+			
+		}
+		
+		public void init() {
+			
+		}
+	}
+
+}

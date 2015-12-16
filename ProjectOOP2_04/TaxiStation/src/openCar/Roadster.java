@@ -14,6 +14,4 @@ public class Roadster extends OpenCar{
 		this.setMaxSpeed(maxSpeed);
 	}
 
-
-
 }

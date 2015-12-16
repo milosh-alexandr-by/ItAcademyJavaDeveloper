@@ -22,4 +22,5 @@
 <fullyQualifiedTypeName name="product.Parser"/>
 <fullyQualifiedTypeName name="creator.SAXParserCreator"/>
 <fullyQualifiedTypeName name="creator.StAXParserCreator"/>
+<fullyQualifiedTypeName name="builder.ParserBuilder"/>
 </qualifiedTypeNameHistroy>

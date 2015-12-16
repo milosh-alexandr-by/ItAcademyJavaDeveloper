@@ -1,7 +1,7 @@
 package mpv;
 
+import car.SelectLanguage;
 import closeCar.CloseCar;
-
 
 public abstract class MPV extends CloseCar {
 
@@ -10,12 +10,11 @@ public abstract class MPV extends CloseCar {
 	public boolean openTruckBody;	  // открытытый грузовой кузов
 	public void hasOpenTruckBody(boolean hasOpenTruckBody){
 		if (hasOpenTruckBody==true) {
-			System.out.println("У машины открытый грузовой кузов.");
+			System.out.println(SelectLanguage.rb.getString("carOpenCargoBody"));
 		}
 		else {
-			System.out.println("У машины закрытый грузовой кузов.");
+			System.out.println(SelectLanguage.rb.getString("carCloseCargoBody"));
 		}
 	}
-
 
 }

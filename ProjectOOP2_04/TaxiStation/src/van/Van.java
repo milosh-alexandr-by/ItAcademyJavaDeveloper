@@ -1,7 +1,7 @@
 package van;
 
+import car.SelectLanguage;
 import closeCar.CloseCar;
-
 
 public class Van extends CloseCar {
 
@@ -10,13 +10,11 @@ public class Van extends CloseCar {
 	public boolean leftSecondDoor;	  // наличие второй двери слева
 	public void hasLeftSecondDoor(boolean hasLeftSecondDoor){
 		if (hasLeftSecondDoor==true) {
-			System.out.println("Слева есть вторая дверь.");
+			System.out.println(SelectLanguage.rb.getString("leftDoor"));
 		}
 		else {
-			System.out.println("Слева нет второй двери.");
+			System.out.println(SelectLanguage.rb.getString("leftDoorNo"));
 		}
 	}
 	
-
-
 }

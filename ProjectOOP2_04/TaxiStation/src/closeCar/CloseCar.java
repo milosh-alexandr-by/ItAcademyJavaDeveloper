@@ -4,6 +4,7 @@
 
 package closeCar;
 import car.Car;
+import car.SelectLanguage;
 
 
 public class CloseCar extends Car {
@@ -15,10 +16,10 @@ public class CloseCar extends Car {
 	public boolean truckBody;	  // грузовой кузов
 	public void hasTruckbody(boolean hasTruckBody){
 		if (hasTruckBody==true) {
-			System.out.println("У машины есть грузовой кузов, отделённый от салона.");
+			System.out.println(SelectLanguage.rb.getString("cargoBodySeparatedPassenger"));
 		}
 		else {
-			System.out.println("У машины нет грузового кузова.");
+			System.out.println(SelectLanguage.rb.getString("carNoCargoBody"));
 		}
 	}
 	
@@ -26,10 +27,10 @@ public class CloseCar extends Car {
 	public boolean trunk;	  // багажник
 	public void hastrunk(boolean hastrunk){
 		if (hastrunk==true) {
-			System.out.println("У машины есть багажник.");
+			System.out.println(SelectLanguage.rb.getString("carHasTrunk"));
 		}
 		else {
-			System.out.println("Машина состоит из однообъёмного кузова.");
+			System.out.println(SelectLanguage.rb.getString("carBodyVan"));
 		}
 	}
 	
@@ -37,10 +38,10 @@ public class CloseCar extends Car {
 	public boolean railDoor;	  // дверь по направляющей
 	public void hasRailDoor(boolean hasRailDoor){
 		if (hasRailDoor==true) {
-			System.out.println("У машины задняя дверь открывается по направляющей.");
+			System.out.println(SelectLanguage.rb.getString("doorOpenGuide"));
 		}
 		else {
-			System.out.println("Задняя дверь открывается как обычная.");
+			System.out.println(SelectLanguage.rb.getString("doorOpenUsual"));
 		}
 	}
 	

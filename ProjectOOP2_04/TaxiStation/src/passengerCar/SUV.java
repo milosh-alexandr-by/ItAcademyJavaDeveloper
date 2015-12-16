@@ -12,11 +12,5 @@ public class SUV extends PassengerCar {
 		this.setPrice(price);
 		this.setMaxSpeed(maxSpeed);
 	}
-
-
-
-
-
-	
 	
 }

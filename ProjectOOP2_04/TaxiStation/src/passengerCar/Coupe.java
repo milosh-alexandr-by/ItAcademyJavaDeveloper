@@ -1,6 +1,5 @@
 package passengerCar;
 
-
 public class Coupe extends PassengerCar {
 
 	// один ряд сидений
@@ -15,4 +14,5 @@ public class Coupe extends PassengerCar {
 		this.setPrice(price);
 		this.setMaxSpeed(maxSpeed);
 	}
+	
 }

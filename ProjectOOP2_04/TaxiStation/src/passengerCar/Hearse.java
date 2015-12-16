@@ -12,6 +12,4 @@ public class Hearse extends PassengerCar  {
 		this.setMaxSpeed(maxSpeed);
 	}
 
-
-
 }

@@ -1,7 +1,5 @@
 package mpv;
 
-
-
 public class Pickup extends MPV {
 
 	public final boolean openTruckBody = true;
@@ -13,7 +11,5 @@ public class Pickup extends MPV {
 		this.setPrice(price);
 		this.setMaxSpeed(maxSpeed);
 	}
-
-
 
 }

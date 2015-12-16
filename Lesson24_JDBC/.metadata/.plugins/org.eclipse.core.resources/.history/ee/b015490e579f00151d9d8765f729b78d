@@ -1,0 +1,33 @@
+package jdbcMilosh;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class JdbcMilosh {
+
+	private static final String url = "jdbc:mysql://localhost:3306/milosh";
+    private static final String user = "root";
+    private static final String password = "root";
+  	
+	public static void main(String[] args) {
+		
+		String query = "select * from expenses";
+		String update = "insert into expenses (paydate, receiver, value) values ('2010-05-05', 1, 88888)";
+		
+	    try (	Connection con = DriverManager.getConnection(url, user, password);
+	    		Statement stmt = con.createStatement();
+	    		stmt.executeUpdate(query); )
+	    {	 
+	    	while (rs.next()) {
+	    		System.out.println(rs.getString(1) + ", " + rs.getString(2) + ", " + rs.getString(3) + ", " + rs.getString(4));}
+	    } catch (SQLException sqlEx) {
+	            sqlEx.printStackTrace();
+	    }
+		
+
+	}
+
+}

@@ -1,0 +1,50 @@
+<%@ page import="java.sql.*" language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	Список заявок отеля.
+	
+	<%
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hotelrequestsystem", "root", "root");
+		Statement stmt = con.createStatement();
+		ResultSet rs = stmt.executeQuery("select * from clientrequest") ;
+	%>
+	
+	<TABLE BORDER="1">
+		<TR>
+			<TH>id</TH>
+			<TH>name</TH>
+			<TH>numberOfSeats</TH>
+			<TH>roomClass</TH>
+			<TH>comingDate</TH>
+			<TH>numberOfDays</TH>
+		</TR>
+		<% while(rs.next()) { %>
+		<TR>
+			<TD><%= rs.getString(1) %></TD>
+			<TD><%= rs.getString(2) %></TD>
+			<TD><%= rs.getString(3) %></TD>
+			<TD><%= rs.getString(4) %></TD>
+			<TD><%= rs.getString(5) %></TD>
+			<TD><%= rs.getString(6) %></TD>
+		</TR>
+		<% } %>
+	</TABLE>
+	
+	<form action="HotelRequestSystem" method="GET">
+		Проверить наличие комнат: <input type="submit" name="checkRoom" value="Check">
+	</form>
+	
+	<form action="Administrator.jsp" method="GET">
+		Вернуться на стартовую: <input type="submit" name="ReturnToMainPage" value="Submit">
+	</form>	
+	
+</body>
+</html>

@@ -1,0 +1,9 @@
+127.0.0.1 - - [11/Dec/2015:00:09:36 +0300] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [11/Dec/2015:00:09:46 +0300] "GET /HotelRequestSystem/Administrator.jsp HTTP/1.1" 200 668
+127.0.0.1 - - [11/Dec/2015:00:09:49 +0300] "GET /HotelRequestSystem/ClientRequest.jsp?ShowRequests=Submit HTTP/1.1" 200 916
+127.0.0.1 - - [11/Dec/2015:00:14:55 +0300] "GET /HotelRequestSystem/Administrator.jsp?ReturnToMainPage=Submit HTTP/1.1" 200 668
+127.0.0.1 - - [11/Dec/2015:00:14:57 +0300] "GET /HotelRequestSystem/HotelRooms.jsp?ShowRoomsOfHotel=Submit HTTP/1.1" 200 1626
+127.0.0.1 - - [11/Dec/2015:00:14:59 +0300] "GET /HotelRequestSystem/Administrator.jsp?ReturnToMainPage=Submit HTTP/1.1" 200 668
+127.0.0.1 - - [11/Dec/2015:00:15:00 +0300] "GET /HotelRequestSystem/Client.jsp?ShowClients=Submit HTTP/1.1" 200 477
+127.0.0.1 - - [11/Dec/2015:00:15:02 +0300] "GET /HotelRequestSystem/Administrator.jsp?ReturnToMainPage=Submit HTTP/1.1" 200 668
+127.0.0.1 - - [11/Dec/2015:00:15:03 +0300] "GET /HotelRequestSystem/ClientRequest.jsp?ShowRequests=Submit HTTP/1.1" 200 916
